@@ -18,7 +18,7 @@ Feature: Products Review
 	    When method POST
 	    Then status 201
 	    And print response
-	    And match response.productId == "FI444"
+	    And match response.productId == "FIKarate"
 			And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8"
 			And match response.rating == 5
 			And match response.text == "Karate Testing Review"

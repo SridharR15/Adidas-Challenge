@@ -4,13 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe47b557-5e8a-4aab-8374-54728e0618d6" name="Default Changelist" comment="" />
+    <list default="true" id="fe47b557-5e8a-4aab-8374-54728e0618d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/Products Review.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Products Review.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ForkJoinPool-1-worker-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/ForkJoinPool-1-worker-1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/features.Products Review.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/features.Products Review.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/features.Products Review.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/features.Products Review.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/features.Products.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/features.Products.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/features.Products.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/features.Products.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-steps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_features-Products-Review-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_features-Products-Review-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_features-Products-feature_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_features-Products-feature_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/results-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/results-json.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Products Review.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Products Review.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Products.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Products.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1udGiG40SHyIXGchjLosVgc2CqY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -19,6 +45,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AndroidAppAutomation" />
   </component>
   <component name="RunManager" selected="JUnit.CucumberRunner">
     <configuration name="All Features in: Adidas-Challenge" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
@@ -118,6 +146,17 @@
       <updated>1624988195714</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Adidas_Challenge$Feature__Products_Review.ic" NAME="Feature: Products Review Coverage Results" MODIFIED="1624988569629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

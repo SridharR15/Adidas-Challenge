@@ -1,6 +1,6 @@
-<testsuite failures="1" name="features/Products Review.feature" skipped="0" tests="4" time="2.321438">
-  <testcase classname="features.Products Review" name="Post a Review" time="2.22415">
-    <failure message="Products Review.feature:21 - path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal">* url productreviewbaseUrl ................................................ passed
+<testsuite failures="1" name="features/Products Review.feature" skipped="0" tests="4" time="3.104073">
+  <testcase classname="features.Products Review" name="Post a Review" time="2.859942">
+    <failure message="Products Review.feature:22 - path: $.locale, actual: null, expected: 'en-GB,en-US;q=0.9,en;q=0.8', reason: actual json-path does not exist">* url productreviewbaseUrl ................................................ passed
 * def jsonBody = .......................................................... passed
 Given path '/reviews' ..................................................... passed
 And path 'FIKarate' ....................................................... passed
@@ -8,17 +8,17 @@ And request jsonBody ...................................................... pass
 When method POST .......................................................... passed
 Then status 201 ........................................................... passed
 And print response ........................................................ passed
-And match response.productId == "FI444" ................................... failed
+And match response.productId == "FIKarate" ................................ passed
+And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" ................. failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: Products Review.feature:21 - path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal&#13;
-	at ✽.And match response.productId == "FI444" (Products Review.feature:21)&#13;
+com.intuit.karate.exception.KarateException: Products Review.feature:22 - path: $.locale, actual: null, expected: 'en-GB,en-US;q=0.9,en;q=0.8', reason: actual json-path does not exist&#13;
+	at ✽.And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" (Products Review.feature:22)&#13;
 
-And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" ................. skipped
 And match response.rating == 5 ............................................ skipped
 And match response.text == "Karate Testing Review" ........................ skipped</failure>
   </testcase>
-  <testcase classname="features.Products Review" name="Get a Review" time="0.044192">
+  <testcase classname="features.Products Review" name="Get a Review" time="0.103856">
     <system-out>* url productreviewbaseUrl ................................................ passed
 * def jsonBody = .......................................................... passed
 Given path '/reviews' ..................................................... passed
@@ -27,13 +27,13 @@ And request jsonBody ...................................................... pass
 When method POST .......................................................... passed
 Then status 201 ........................................................... passed
 And print response ........................................................ passed
-And match response.productId == "FI444" ................................... failed
+And match response.productId == "FIKarate" ................................ passed
+And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" ................. failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: Products Review.feature:21 - path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal&#13;
-	at ✽.And match response.productId == "FI444" (Products Review.feature:21)&#13;
+com.intuit.karate.exception.KarateException: Products Review.feature:22 - path: $.locale, actual: null, expected: 'en-GB,en-US;q=0.9,en;q=0.8', reason: actual json-path does not exist&#13;
+	at ✽.And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" (Products Review.feature:22)&#13;
 
-And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" ................. skipped
 And match response.rating == 5 ............................................ skipped
 And match response.text == "Karate Testing Review" ........................ skipped
 * url productreviewbaseUrl ................................................ passed
@@ -46,7 +46,7 @@ And match response[0].productId == "FIKarate" ............................. pass
 And match response[0].rating == 5 ......................................... passed
 And match response[0].text == "Karate Testing Review" ..................... passed</system-out>
   </testcase>
-  <testcase classname="features.Products Review" name="Post a Invalid Review" time="0.02087">
+  <testcase classname="features.Products Review" name="Post a Invalid Review" time="0.048444">
     <system-out>* url productreviewbaseUrl ................................................ passed
 * def jsonBody = .......................................................... passed
 Given path '/reviews' ..................................................... passed
@@ -55,13 +55,13 @@ And request jsonBody ...................................................... pass
 When method POST .......................................................... passed
 Then status 201 ........................................................... passed
 And print response ........................................................ passed
-And match response.productId == "FI444" ................................... failed
+And match response.productId == "FIKarate" ................................ passed
+And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" ................. failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: Products Review.feature:21 - path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal&#13;
-	at ✽.And match response.productId == "FI444" (Products Review.feature:21)&#13;
+com.intuit.karate.exception.KarateException: Products Review.feature:22 - path: $.locale, actual: null, expected: 'en-GB,en-US;q=0.9,en;q=0.8', reason: actual json-path does not exist&#13;
+	at ✽.And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" (Products Review.feature:22)&#13;
 
-And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" ................. skipped
 And match response.rating == 5 ............................................ skipped
 And match response.text == "Karate Testing Review" ........................ skipped
 * url productreviewbaseUrl ................................................ passed
@@ -83,7 +83,7 @@ Then status 201 ........................................................... pass
 And print response ........................................................ passed
 And match response.productId == "InvalidID" ............................... passed</system-out>
   </testcase>
-  <testcase classname="features.Products Review" name="Get a Review with Invalid ID" time="0.032225">
+  <testcase classname="features.Products Review" name="Get a Review with Invalid ID" time="0.091831">
     <system-out>* url productreviewbaseUrl ................................................ passed
 * def jsonBody = .......................................................... passed
 Given path '/reviews' ..................................................... passed
@@ -92,13 +92,13 @@ And request jsonBody ...................................................... pass
 When method POST .......................................................... passed
 Then status 201 ........................................................... passed
 And print response ........................................................ passed
-And match response.productId == "FI444" ................................... failed
+And match response.productId == "FIKarate" ................................ passed
+And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" ................. failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: Products Review.feature:21 - path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal&#13;
-	at ✽.And match response.productId == "FI444" (Products Review.feature:21)&#13;
+com.intuit.karate.exception.KarateException: Products Review.feature:22 - path: $.locale, actual: null, expected: 'en-GB,en-US;q=0.9,en;q=0.8', reason: actual json-path does not exist&#13;
+	at ✽.And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" (Products Review.feature:22)&#13;
 
-And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" ................. skipped
 And match response.rating == 5 ............................................ skipped
 And match response.text == "Karate Testing Review" ........................ skipped
 * url productreviewbaseUrl ................................................ passed

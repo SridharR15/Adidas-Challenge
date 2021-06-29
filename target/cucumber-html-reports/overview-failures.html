@@ -76,7 +76,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>End To End Api Test Cases Runner</td>
-            <td>29 Jun 2021, 22:35</td>
+            <td>29 Jun 2021, 23:30</td>
     </tr>
   </tbody>
 </table>
@@ -124,7 +124,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">2s 224ms</span>
+  <span class="lead-duration duration">2s 859ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -201,7 +201,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path '/reviews'</span>
   
-  <span class="lead-duration duration">004ms</span>
+  <span class="lead-duration duration">005ms</span>
 
   </div>
 
@@ -264,7 +264,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method POST</span>
   
-  <span class="lead-duration duration">2s 204ms</span>
+  <span class="lead-duration duration">2s 826ms</span>
 
   </div>
 
@@ -279,7 +279,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>22:35:36.471 request:
+        <pre>23:30:22.833 request:
 1 &gt; POST http://localhost:3002/reviews/FIKarate
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -289,12 +289,12 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 {&quot;productId&quot;:&quot;FI444&quot;,&quot;locale&quot;:&quot;en-GB,en-US;q=0.9,en;q=0.8&quot;,&quot;rating&quot;:5,&quot;text&quot;:&quot;Karate Testing Review&quot;}
 
-22:35:36.708 response time in milliseconds: 234.09
+23:30:23.252 response time in milliseconds: 413.63
 1 &lt; 201
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 66
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:36 GMT
+1 &lt; Date: Tue, 29 Jun 2021 21:30:23 GMT
 1 &lt; ETag: W/&quot;42-9sDNi2RFjuwePwGntKuSudUGXjQ&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
@@ -350,7 +350,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>22:35:36.711 [print] {
+        <pre>23:30:23.256 [print] {
   &quot;productId&quot;: &quot;FIKarate&quot;,
   &quot;rating&quot;: 5,
   &quot;text&quot;: &quot;Karate Testing Review&quot;
@@ -366,9 +366,30 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.productId == &quot;FIKarate&quot;</span>
+  
+  <span class="lead-duration duration">012ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
 <div class="brief failed">
   <span class="keyword indention">And</span>
-  <span class="name">match response.productId == &quot;FI444&quot;</span>
+  <span class="name">match response.locale == &quot;en-GB,en-US;q=0.9,en;q=0.8&quot;</span>
   
   <span class="lead-duration duration">009ms</span>
 
@@ -379,10 +400,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
-          <a>com.intuit.karate.exception.KarateException: Products Review.feature:21 - path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal</a>
+          <a>com.intuit.karate.exception.KarateException: Products Review.feature:22 - path: $.locale, actual: null, expected: 'en-GB,en-US;q=0.9,en;q=0.8', reason: actual json-path does not exist</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: Products Review.feature:21 - path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal</pre>
+        <pre>com.intuit.karate.exception.KarateException: Products Review.feature:22 - path: $.locale, actual: null, expected: 'en-GB,en-US;q=0.9,en;q=0.8', reason: actual json-path does not exist</pre>
       </div>
     </div>
   </div>
@@ -396,31 +417,10 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details">
-        <pre>22:35:36.721 assertion failed: path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal</pre>
+        <pre>23:30:23.278 assertion failed: path: $.locale, actual: null, expected: 'en-GB,en-US;q=0.9,en;q=0.8', reason: actual json-path does not exist</pre>
       </div>
     </div>
   </div>
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">match response.locale == &quot;en-GB,en-US;q=0.9,en;q=0.8&quot;</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
 
         
 
@@ -490,7 +490,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">683ms</span>
+  <span class="lead-duration duration">787ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
@@ -552,7 +552,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
   
-  <span class="lead-duration duration">273ms</span>
+  <span class="lead-duration duration">428ms</span>
 
   </div>
 
@@ -567,23 +567,23 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details">
-        <pre>22:35:37.080 request:
+        <pre>23:30:24.014 request:
 1 &gt; GET http://localhost:3001/product
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: localhost:3001
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 
-22:35:37.343 response time in milliseconds: 260.98
+23:30:24.430 response time in milliseconds: 411.73
 1 &lt; 200
 1 &lt; Connection: keep-alive
-1 &lt; Content-Length: 11955
+1 &lt; Content-Length: 13621
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:37 GMT
-1 &lt; ETag: W/&quot;2eb3-6OVAXJ9pqSJmOVFBgXAYotgf46E&quot;
+1 &lt; Date: Tue, 29 Jun 2021 21:30:24 GMT
+1 &lt; ETag: W/&quot;3535-KkW0nuGGJ5cWw+XSS3HRD6p0SqE&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
-[{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;string&quot;,&quot;description&quot;:&quot;string&quot;,&quot;imgUrl&quot;:&quot;string&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:94,&quot;id&quot;:&quot;FI444&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:99,&quot;id&quot;:&quot;HI333&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c7099422ccc14e44b406abec00ba6c96_9366/NMD_R1_V2_Shoes_Black_FY6862_01_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:94,&quot;id&quot;:&quot;HI334&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c93fa315d2f64775ac1fab96016f09d1_9366/Dame_6_Shoes_Black_FV8624_01_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:95,&quot;id&quot;:&quot;HI336&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/3eebc0498b1347e397f8ab94016140ba_9366/FS1496_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:27,&quot;id&quot;:&quot;HI337&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/f7b3df22026b42b8b539a9d300adb52b_9366/DZ9416_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:27,&quot;id&quot;:&quot;HI338&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/c089e9b31e01406bbee5abc9009a421e_9366/FV9996_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:41,&quot;id&quot;:&quot;HI339&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/da278c9c5e244068b32cac4d0125fedd_9366/FY2002_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:7,&quot;id&quot;:&quot;HI340&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/3e13d15c862749708801ac4d01257e1c_9366/FY0072_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:95,&quot;id&quot;:&quot;HI341&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/dd6788b5e79742c3bfbaac4e00f57272_9366/FY9386_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:84,&quot;id&quot;:&quot;HI342&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/807d251c686648de85f2abb10042fdf9_9366/GC7240_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:82,&quot;id&quot;:&quot;HI343&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/64a622f71145430cad1fabaa00590751_9366/GI7430_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:60,&quot;id&quot;:&quot;HI344&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/bae82f2b58e7466aba6daba30141b1d4_9366/GD8454_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:31,&quot;id&quot;:&quot;HI345&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/12b53067c3f44d3f90f3ac4d0139f637_9366/GZ2751_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:53,&quot;id&quot;:&quot;HI346&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c4ea90c85fce47db8e33ab8e00fcff20_9366/GD2372_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:82,&quot;id&quot;:&quot;HI347&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/0fcb1719675b4df0a160ab1a0104630b_9366/GD3509_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:1,&quot;id&quot;:&quot;HI348&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/22f397edbd074cb180f4ab5000c7aebf_9366/GD2328_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:2,&quot;id&quot;:&quot;HI349&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/81b52cbaa4b3426b88fbabc20094e778_9366/GD4557_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:37,&quot;id&quot;:&quot;HI350&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/09011a8bf86941bfaaa5ac4d01258fef_9366/FY0075_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:12,&quot;id&quot;:&quot;HI351&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/b8c9ddc4ada74d9fb819ac450127c685_9366/FY0965_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:6,&quot;id&quot;:&quot;HI777&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/b8c9ddc4ada74d9fb819ac450127c685_9366/FY0965_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c4ea90c85fce47db8e33ab8e0ghgh0fcff20_9366/GD2372_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96}]</pre>
+[{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;string&quot;,&quot;description&quot;:&quot;string&quot;,&quot;imgUrl&quot;:&quot;string&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:94,&quot;id&quot;:&quot;FI444&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:99,&quot;id&quot;:&quot;HI333&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c7099422ccc14e44b406abec00ba6c96_9366/NMD_R1_V2_Shoes_Black_FY6862_01_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:94,&quot;id&quot;:&quot;HI334&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c93fa315d2f64775ac1fab96016f09d1_9366/Dame_6_Shoes_Black_FV8624_01_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:95,&quot;id&quot;:&quot;HI336&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/3eebc0498b1347e397f8ab94016140ba_9366/FS1496_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:27,&quot;id&quot;:&quot;HI337&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/f7b3df22026b42b8b539a9d300adb52b_9366/DZ9416_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:27,&quot;id&quot;:&quot;HI338&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/c089e9b31e01406bbee5abc9009a421e_9366/FV9996_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:41,&quot;id&quot;:&quot;HI339&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/da278c9c5e244068b32cac4d0125fedd_9366/FY2002_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:7,&quot;id&quot;:&quot;HI340&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/3e13d15c862749708801ac4d01257e1c_9366/FY0072_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:95,&quot;id&quot;:&quot;HI341&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/dd6788b5e79742c3bfbaac4e00f57272_9366/FY9386_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:84,&quot;id&quot;:&quot;HI342&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/807d251c686648de85f2abb10042fdf9_9366/GC7240_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:82,&quot;id&quot;:&quot;HI343&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/64a622f71145430cad1fabaa00590751_9366/GI7430_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:60,&quot;id&quot;:&quot;HI344&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/bae82f2b58e7466aba6daba30141b1d4_9366/GD8454_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:31,&quot;id&quot;:&quot;HI345&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/12b53067c3f44d3f90f3ac4d0139f637_9366/GZ2751_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:53,&quot;id&quot;:&quot;HI346&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c4ea90c85fce47db8e33ab8e00fcff20_9366/GD2372_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:82,&quot;id&quot;:&quot;HI347&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/0fcb1719675b4df0a160ab1a0104630b_9366/GD3509_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:1,&quot;id&quot;:&quot;HI348&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/22f397edbd074cb180f4ab5000c7aebf_9366/GD2328_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:2,&quot;id&quot;:&quot;HI349&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/81b52cbaa4b3426b88fbabc20094e778_9366/GD4557_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:37,&quot;id&quot;:&quot;HI350&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/09011a8bf86941bfaaa5ac4d01258fef_9366/FY0075_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:12,&quot;id&quot;:&quot;HI351&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/b8c9ddc4ada74d9fb819ac450127c685_9366/FY0965_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:6,&quot;id&quot;:&quot;HI777&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/b8c9ddc4ada74d9fb819ac450127c685_9366/FY0965_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c4ea90c85fce47db8e33ab8e0ghgh0fcff20_9366/GD2372_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96}]</pre>
       </div>
     </div>
   </div>
@@ -620,7 +620,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">print response</span>
   
-  <span class="lead-duration duration">021ms</span>
+  <span class="lead-duration duration">020ms</span>
 
   </div>
 
@@ -635,7 +635,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-11" class="collapse collapsable-details">
-        <pre>22:35:37.371 [print] [
+        <pre>23:30:24.457 [print] [
   {
     &quot;imgUrl&quot;: &quot;string&quot;,
     &quot;price&quot;: 96,
@@ -848,9 +848,75 @@ $(document).ready(function() {
   },
   {
     &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 96,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
     &quot;price&quot;: 73,
     &quot;name&quot;: null,
     &quot;description&quot;: null,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 96,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
     &quot;currency&quot;: &quot;$&quot;,
     &quot;id&quot;: &quot;FIKarate&quot;
   },
@@ -1102,7 +1168,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def productId = &quot;FI444&quot;</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">007ms</span>
 
   </div>
 
@@ -1123,7 +1189,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def out = karate.jsonPath(response, &quot;$[?(@.id == '&quot; + productId + &quot;')]&quot;)</span>
   
-  <span class="lead-duration duration">126ms</span>
+  <span class="lead-duration duration">163ms</span>
 
   </div>
 
@@ -1144,7 +1210,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match out[0].price == 94</span>
   
-  <span class="lead-duration duration">077ms</span>
+  <span class="lead-duration duration">014ms</span>
 
   </div>
 
@@ -1165,7 +1231,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match out[0].description == &quot;description&quot;</span>
   
-  <span class="lead-duration duration">056ms</span>
+  <span class="lead-duration duration">024ms</span>
 
   </div>
 
@@ -1185,27 +1251,6 @@ $(document).ready(function() {
 <div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">match out[0].imgUrl == &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg&quot;</span>
-  
-  <span class="lead-duration duration">047ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def productId = &quot;HI347&quot;</span>
   
   <span class="lead-duration duration">019ms</span>
 
@@ -1226,9 +1271,30 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">*</span>
+  <span class="name">def productId = &quot;HI347&quot;</span>
+  
+  <span class="lead-duration duration">025ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
   <span class="name">def out = karate.jsonPath(response, &quot;$[?(@.id == '&quot; + productId + &quot;')]&quot;)</span>
   
-  <span class="lead-duration duration">039ms</span>
+  <span class="lead-duration duration">058ms</span>
 
   </div>
 
@@ -1249,7 +1315,28 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match out[0].price == 82</span>
   
-  <span class="lead-duration duration">009ms</span>
+  <span class="lead-duration duration">018ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match out[0].description == &quot;description&quot;</span>
+  
+  <span class="lead-duration duration">002ms</span>
 
   </div>
 
@@ -1268,9 +1355,9 @@ $(document).ready(function() {
         
 <div class="brief failed">
   <span class="keyword indention">And</span>
-  <span class="name">match out[0].description == &quot;TestCreateNewproduct&quot;</span>
+  <span class="name">match out[0].imgUrl == &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg&quot;</span>
   
-  <span class="lead-duration duration">007ms</span>
+  <span class="lead-duration duration">001ms</span>
 
   </div>
 
@@ -1279,10 +1366,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
-          <a>com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal</a>
+          <a>com.intuit.karate.exception.KarateException: Products.feature:19 - path: $[0].imgUrl, actual: 'https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/0fcb1719675b4df0a160ab1a0104630b_9366/GD3509_01_laydown.jpg', expected: 'https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg', reason: not equal</a>
       </div>
       <div id="msg-12" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal</pre>
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:19 - path: $[0].imgUrl, actual: 'https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/0fcb1719675b4df0a160ab1a0104630b_9366/GD3509_01_laydown.jpg', expected: 'https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg', reason: not equal</pre>
       </div>
     </div>
   </div>
@@ -1296,31 +1383,10 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-13" class="collapse collapsable-details">
-        <pre>22:35:37.783 assertion failed: path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal</pre>
+        <pre>23:30:24.803 assertion failed: path: $[0].imgUrl, actual: 'https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/0fcb1719675b4df0a160ab1a0104630b_9366/GD3509_01_laydown.jpg', expected: 'https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg', reason: not equal</pre>
       </div>
     </div>
   </div>
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">match out[0].imgUrl == &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg&quot;</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
 
         
 
@@ -1348,7 +1414,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">022ms</span>
+  <span class="lead-duration duration">033ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-14">
@@ -1488,7 +1554,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method PUT</span>
   
-  <span class="lead-duration duration">016ms</span>
+  <span class="lead-duration duration">026ms</span>
 
   </div>
 
@@ -1503,7 +1569,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-17" class="collapse collapsable-details">
-        <pre>22:35:37.931 request:
+        <pre>23:30:25.114 request:
 1 &gt; PUT http://localhost:3001/product/FIKarate
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -1513,12 +1579,12 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 {&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;RugbyBall&quot;,&quot;description&quot;:&quot;Ball&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
 
-22:35:37.945 response time in milliseconds: 12.26
+23:30:25.137 response time in milliseconds: 20.99
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 195
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:37 GMT
+1 &lt; Date: Tue, 29 Jun 2021 21:30:25 GMT
 1 &lt; ETag: W/&quot;c3-dythZYpfbn84COTULEtHixfoe4U&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
@@ -1559,7 +1625,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">print response</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">001ms</span>
 
   </div>
 
@@ -1574,7 +1640,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-18" class="collapse collapsable-details">
-        <pre>22:35:37.946 [print] {
+        <pre>23:30:25.139 [print] {
   &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
   &quot;name&quot;: &quot;RugbyBall&quot;,
   &quot;description&quot;: &quot;Ball&quot;,
@@ -1616,7 +1682,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.name == &quot;KaratePut&quot;</span>
   
-  <span class="lead-duration duration">003ms</span>
+  <span class="lead-duration duration">004ms</span>
 
   </div>
 
@@ -1642,7 +1708,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-20" class="collapse collapsable-details">
-        <pre>22:35:37.950 assertion failed: path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal</pre>
+        <pre>23:30:25.144 assertion failed: path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal</pre>
       </div>
     </div>
   </div>
@@ -1715,7 +1781,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">029ms</span>
+  <span class="lead-duration duration">020ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
@@ -1791,7 +1857,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">path '/product'</span>
   
-  <span class="lead-duration duration">002ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -1833,7 +1899,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method POST</span>
   
-  <span class="lead-duration duration">026ms</span>
+  <span class="lead-duration duration">019ms</span>
 
   </div>
 
@@ -1848,7 +1914,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-24" class="collapse collapsable-details">
-        <pre>22:35:38.105 request:
+        <pre>23:30:25.257 request:
 1 &gt; POST http://localhost:3001/product
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -1858,16 +1924,16 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 {&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
 
-22:35:38.128 response time in milliseconds: 21.68
+23:30:25.273 response time in milliseconds: 15.75
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 238
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
-1 &lt; ETag: W/&quot;ee-dW44NSIBsFM0Gzd252jWOWkqJEs&quot;
+1 &lt; Date: Tue, 29 Jun 2021 21:30:25 GMT
+1 &lt; ETag: W/&quot;ee-ujWF1dEp9Wvu1DOTelvxTkq4M4U&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
-{&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;_id&quot;:&quot;60db841a74566a27f7e101ad&quot;}</pre>
+{&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;_id&quot;:&quot;60db90f174566a3df4e101b9&quot;}</pre>
       </div>
     </div>
   </div>
@@ -1892,10 +1958,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-25">
-          <a>com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db841a74566a27f7e101ad&quot;}</a>
+          <a>com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 16, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db90f174566a3df4e101b9&quot;}</a>
       </div>
       <div id="msg-25" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db841a74566a27f7e101ad&quot;}</pre>
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 16, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db90f174566a3df4e101b9&quot;}</pre>
       </div>
     </div>
   </div>
@@ -1909,7 +1975,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-26" class="collapse collapsable-details">
-        <pre>22:35:38.128 status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db841a74566a27f7e101ad&quot;}</pre>
+        <pre>23:30:25.275 status code was: 200, expected: 400, response time: 16, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db90f174566a3df4e101b9&quot;}</pre>
       </div>
     </div>
   </div>
@@ -1961,7 +2027,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">053ms</span>
+  <span class="lead-duration duration">017ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-27">
@@ -2079,7 +2145,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method POST</span>
   
-  <span class="lead-duration duration">052ms</span>
+  <span class="lead-duration duration">015ms</span>
 
   </div>
 
@@ -2094,7 +2160,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-30" class="collapse collapsable-details">
-        <pre>22:35:38.146 request:
+        <pre>23:30:25.291 request:
 1 &gt; POST http://localhost:3001/product
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -2104,16 +2170,16 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 {&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
 
-22:35:38.193 response time in milliseconds: 46.06
+23:30:25.303 response time in milliseconds: 10.80
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 234
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
-1 &lt; ETag: W/&quot;ea-NgoR1uPVM49W5cw28/dmyb6BP5A&quot;
+1 &lt; Date: Tue, 29 Jun 2021 21:30:25 GMT
+1 &lt; ETag: W/&quot;ea-nKRMx0p2oZrjwC5ebshMBA/hMhc&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
-{&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;_id&quot;:&quot;60db841a74566a2b0ce101ae&quot;}</pre>
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;_id&quot;:&quot;60db90f174566a4a64e101ba&quot;}</pre>
       </div>
     </div>
   </div>
@@ -2138,10 +2204,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-31">
-          <a>com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2b0ce101ae&quot;}</a>
+          <a>com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 11, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db90f174566a4a64e101ba&quot;}</a>
       </div>
       <div id="msg-31" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2b0ce101ae&quot;}</pre>
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 11, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db90f174566a4a64e101ba&quot;}</pre>
       </div>
     </div>
   </div>
@@ -2155,7 +2221,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-32" class="collapse collapsable-details">
-        <pre>22:35:38.194 status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2b0ce101ae&quot;}</pre>
+        <pre>23:30:25.304 status code was: 200, expected: 400, response time: 11, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db90f174566a4a64e101ba&quot;}</pre>
       </div>
     </div>
   </div>
@@ -2207,7 +2273,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">028ms</span>
+  <span class="lead-duration duration">037ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-33">
@@ -2325,7 +2391,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method POST</span>
   
-  <span class="lead-duration duration">027ms</span>
+  <span class="lead-duration duration">033ms</span>
 
   </div>
 
@@ -2340,7 +2406,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-36" class="collapse collapsable-details">
-        <pre>22:35:38.222 request:
+        <pre>23:30:25.343 request:
 1 &gt; POST http://localhost:3001/product
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -2350,16 +2416,16 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 {&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
 
-22:35:38.246 response time in milliseconds: 23.27
+23:30:25.366 response time in milliseconds: 20.57
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 208
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
-1 &lt; ETag: W/&quot;d0-QnmH8Y+mX2gPGd1RlkiH9AQhbm4&quot;
+1 &lt; Date: Tue, 29 Jun 2021 21:30:25 GMT
+1 &lt; ETag: W/&quot;d0-dwLAC6eA+0CFjOH0Vg/gzYH2gc0&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
-{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;_id&quot;:&quot;60db841a74566a2165e101af&quot;}</pre>
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;_id&quot;:&quot;60db90f174566a2163e101bb&quot;}</pre>
       </div>
     </div>
   </div>
@@ -2375,7 +2441,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">status 400</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">002ms</span>
 
   </div>
 
@@ -2384,10 +2450,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-37">
-          <a>com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2165e101af&quot;}</a>
+          <a>com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 21, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db90f174566a2163e101bb&quot;}</a>
       </div>
       <div id="msg-37" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2165e101af&quot;}</pre>
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 21, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db90f174566a2163e101bb&quot;}</pre>
       </div>
     </div>
   </div>
@@ -2401,7 +2467,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-38" class="collapse collapsable-details">
-        <pre>22:35:38.247 status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2165e101af&quot;}</pre>
+        <pre>23:30:25.373 status code was: 200, expected: 400, response time: 21, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db90f174566a2163e101bb&quot;}</pre>
       </div>
     </div>
   </div>
@@ -2453,7 +2519,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">029ms</span>
+  <span class="lead-duration duration">056ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-39">
@@ -2571,7 +2637,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method POST</span>
   
-  <span class="lead-duration duration">027ms</span>
+  <span class="lead-duration duration">055ms</span>
 
   </div>
 
@@ -2586,7 +2652,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-42" class="collapse collapsable-details">
-        <pre>22:35:38.266 request:
+        <pre>23:30:25.412 request:
 1 &gt; POST http://localhost:3001/product
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -2596,16 +2662,16 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 {&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}
 
-22:35:38.291 response time in milliseconds: 22.71
+23:30:25.459 response time in milliseconds: 46.32
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 116
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
-1 &lt; ETag: W/&quot;74-mrkLri5pkdACaqrGFaFBjkJOg+0&quot;
+1 &lt; Date: Tue, 29 Jun 2021 21:30:25 GMT
+1 &lt; ETag: W/&quot;74-vrv+FPXf1dHgAk/pnRYkknmv26E&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
-{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db841a74566a60dce101b0&quot;}</pre>
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db90f174566a41a5e101bc&quot;}</pre>
       </div>
     </div>
   </div>
@@ -2621,7 +2687,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">status 400</span>
   
-  <span class="lead-duration duration">001ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -2630,10 +2696,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-43">
-          <a>com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a60dce101b0&quot;}</a>
+          <a>com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db90f174566a41a5e101bc&quot;}</a>
       </div>
       <div id="msg-43" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a60dce101b0&quot;}</pre>
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db90f174566a41a5e101bc&quot;}</pre>
       </div>
     </div>
   </div>
@@ -2647,7 +2713,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-44" class="collapse collapsable-details">
-        <pre>22:35:38.293 status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a60dce101b0&quot;}</pre>
+        <pre>23:30:25.459 status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db90f174566a41a5e101bc&quot;}</pre>
       </div>
     </div>
   </div>
@@ -2699,7 +2765,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">032ms</span>
+  <span class="lead-duration duration">014ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-45">
@@ -2813,7 +2879,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method POST</span>
   
-  <span class="lead-duration duration">032ms</span>
+  <span class="lead-duration duration">013ms</span>
 
   </div>
 
@@ -2828,7 +2894,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-48" class="collapse collapsable-details">
-        <pre>22:35:38.342 request:
+        <pre>23:30:25.478 request:
 1 &gt; POST http://localhost:3001/product
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -2838,16 +2904,16 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 {}
 
-22:35:38.370 response time in milliseconds: 26.13
+23:30:25.488 response time in milliseconds: 9.96
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 34
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
-1 &lt; ETag: W/&quot;22-qDn5Eg6zsnZ0RD5nEiFc5h6kDWU&quot;
+1 &lt; Date: Tue, 29 Jun 2021 21:30:25 GMT
+1 &lt; ETag: W/&quot;22-yCCMsQmT+TEXrV54Ycy3eRrvMkM&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
-{&quot;_id&quot;:&quot;60db841a74566a55e0e101b1&quot;}</pre>
+{&quot;_id&quot;:&quot;60db90f174566a34b0e101bd&quot;}</pre>
       </div>
     </div>
   </div>
@@ -2872,10 +2938,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-49">
-          <a>com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {&quot;_id&quot;:&quot;60db841a74566a55e0e101b1&quot;}</a>
+          <a>com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 10, url: http://localhost:3001/product, response: {&quot;_id&quot;:&quot;60db90f174566a34b0e101bd&quot;}</a>
       </div>
       <div id="msg-49" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {&quot;_id&quot;:&quot;60db841a74566a55e0e101b1&quot;}</pre>
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 10, url: http://localhost:3001/product, response: {&quot;_id&quot;:&quot;60db90f174566a34b0e101bd&quot;}</pre>
       </div>
     </div>
   </div>
@@ -2889,7 +2955,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-50" class="collapse collapsable-details">
-        <pre>22:35:38.371 status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {&quot;_id&quot;:&quot;60db841a74566a55e0e101b1&quot;}</pre>
+        <pre>23:30:25.489 status code was: 200, expected: 400, response time: 10, url: http://localhost:3001/product, response: {&quot;_id&quot;:&quot;60db90f174566a34b0e101bd&quot;}</pre>
       </div>
     </div>
   </div>
@@ -2941,7 +3007,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">067ms</span>
+  <span class="lead-duration duration">033ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-51">
@@ -3080,7 +3146,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method PUT</span>
   
-  <span class="lead-duration duration">065ms</span>
+  <span class="lead-duration duration">031ms</span>
 
   </div>
 
@@ -3095,7 +3161,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-54" class="collapse collapsable-details">
-        <pre>22:35:38.404 request:
+        <pre>23:30:25.517 request:
 1 &gt; PUT http://localhost:3001/product/FIKarate
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -3105,12 +3171,12 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 {&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
 
-22:35:38.464 response time in milliseconds: 58.64
+23:30:25.542 response time in milliseconds: 23.24
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 204
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; Date: Tue, 29 Jun 2021 21:30:25 GMT
 1 &lt; ETag: W/&quot;cc-Gz5S8NBYw7YymVfsIHKwfe3N9LM&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
@@ -3139,10 +3205,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-55">
-          <a>com.intuit.karate.exception.KarateException: Products.feature:162 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}</a>
+          <a>com.intuit.karate.exception.KarateException: Products.feature:162 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}</a>
       </div>
       <div id="msg-55" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: Products.feature:162 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}</pre>
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:162 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}</pre>
       </div>
     </div>
   </div>
@@ -3156,7 +3222,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-56" class="collapse collapsable-details">
-        <pre>22:35:38.465 status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}</pre>
+        <pre>23:30:25.543 status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}</pre>
       </div>
     </div>
   </div>
@@ -3208,7 +3274,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">101ms</span>
+  <span class="lead-duration duration">039ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-57">
@@ -3347,7 +3413,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method PUT</span>
   
-  <span class="lead-duration duration">099ms</span>
+  <span class="lead-duration duration">038ms</span>
 
   </div>
 
@@ -3362,7 +3428,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-60" class="collapse collapsable-details">
-        <pre>22:35:38.494 request:
+        <pre>23:30:25.573 request:
 1 &gt; PUT http://localhost:3001/product/FIKarate
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -3372,12 +3438,12 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 {&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
 
-22:35:38.588 response time in milliseconds: 90.17
+23:30:25.610 response time in milliseconds: 35.32
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 201
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; Date: Tue, 29 Jun 2021 21:30:25 GMT
 1 &lt; ETag: W/&quot;c9-mdmPmv1G6nEbXgtsue/7ANHrbX4&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
@@ -3397,7 +3463,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">status 400</span>
   
-  <span class="lead-duration duration">001ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -3406,10 +3472,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-61">
-          <a>com.intuit.karate.exception.KarateException: Products.feature:177 - status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</a>
+          <a>com.intuit.karate.exception.KarateException: Products.feature:177 - status code was: 200, expected: 400, response time: 35, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</a>
       </div>
       <div id="msg-61" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: Products.feature:177 - status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:177 - status code was: 200, expected: 400, response time: 35, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
       </div>
     </div>
   </div>
@@ -3423,7 +3489,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-62" class="collapse collapsable-details">
-        <pre>22:35:38.590 status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
+        <pre>23:30:25.611 status code was: 200, expected: 400, response time: 35, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
       </div>
     </div>
   </div>
@@ -3475,7 +3541,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">031ms</span>
+  <span class="lead-duration duration">062ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-63">
@@ -3614,7 +3680,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method PUT</span>
   
-  <span class="lead-duration duration">030ms</span>
+  <span class="lead-duration duration">060ms</span>
 
   </div>
 
@@ -3629,7 +3695,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-66" class="collapse collapsable-details">
-        <pre>22:35:38.614 request:
+        <pre>23:30:25.643 request:
 1 &gt; PUT http://localhost:3001/product/FIKarate
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -3639,12 +3705,12 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 {&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
 
-22:35:38.642 response time in milliseconds: 26.59
+23:30:25.698 response time in milliseconds: 54.06
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 174
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; Date: Tue, 29 Jun 2021 21:30:25 GMT
 1 &lt; ETag: W/&quot;ae-AXxkBt+fYNBixaVrdYrHViFzPfc&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
@@ -3664,7 +3730,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">status 400</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">001ms</span>
 
   </div>
 
@@ -3673,10 +3739,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-67">
-          <a>com.intuit.karate.exception.KarateException: Products.feature:192 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</a>
+          <a>com.intuit.karate.exception.KarateException: Products.feature:192 - status code was: 200, expected: 400, response time: 54, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</a>
       </div>
       <div id="msg-67" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: Products.feature:192 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:192 - status code was: 200, expected: 400, response time: 54, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
       </div>
     </div>
   </div>
@@ -3690,7 +3756,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-68" class="collapse collapsable-details">
-        <pre>22:35:38.643 status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
+        <pre>23:30:25.699 status code was: 200, expected: 400, response time: 54, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
       </div>
     </div>
   </div>
@@ -3742,7 +3808,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">065ms</span>
+  <span class="lead-duration duration">063ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-69">
@@ -3896,7 +3962,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-72" class="collapse collapsable-details">
-        <pre>22:35:38.661 request:
+        <pre>23:30:25.720 request:
 1 &gt; PUT http://localhost:3001/product/FIKarate
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -3906,12 +3972,12 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 {&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}
 
-22:35:38.720 response time in milliseconds: 58.61
+23:30:25.780 response time in milliseconds: 58.56
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 82
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; Date: Tue, 29 Jun 2021 21:30:25 GMT
 1 &lt; ETag: W/&quot;52-d4N44WQr3YSsVVw7ztkeij9sgYw&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
@@ -3957,7 +4023,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-74" class="collapse collapsable-details">
-        <pre>22:35:38.721 status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
+        <pre>23:30:25.780 status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
       </div>
     </div>
   </div>
@@ -4009,7 +4075,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">070ms</span>
+  <span class="lead-duration duration">026ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-75">
@@ -4144,7 +4210,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method PUT</span>
   
-  <span class="lead-duration duration">069ms</span>
+  <span class="lead-duration duration">024ms</span>
 
   </div>
 
@@ -4159,7 +4225,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-78" class="collapse collapsable-details">
-        <pre>22:35:38.758 request:
+        <pre>23:30:25.809 request:
 1 &gt; PUT http://localhost:3001/product/FIKarate
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -4169,12 +4235,12 @@ $(document).ready(function() {
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 {}
 
-22:35:38.820 response time in milliseconds: 60.42
+23:30:25.829 response time in milliseconds: 19.23
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 2
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; Date: Tue, 29 Jun 2021 21:30:25 GMT
 1 &lt; ETag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
@@ -4203,10 +4269,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-79">
-          <a>com.intuit.karate.exception.KarateException: Products.feature:218 - status code was: 200, expected: 400, response time: 60, url: http://localhost:3001/product/FIKarate, response: {}</a>
+          <a>com.intuit.karate.exception.KarateException: Products.feature:218 - status code was: 200, expected: 400, response time: 19, url: http://localhost:3001/product/FIKarate, response: {}</a>
       </div>
       <div id="msg-79" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: Products.feature:218 - status code was: 200, expected: 400, response time: 60, url: http://localhost:3001/product/FIKarate, response: {}</pre>
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:218 - status code was: 200, expected: 400, response time: 19, url: http://localhost:3001/product/FIKarate, response: {}</pre>
       </div>
     </div>
   </div>
@@ -4220,7 +4286,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-80" class="collapse collapsable-details">
-        <pre>22:35:38.821 status code was: 200, expected: 400, response time: 60, url: http://localhost:3001/product/FIKarate, response: {}</pre>
+        <pre>23:30:25.830 status code was: 200, expected: 400, response time: 19, url: http://localhost:3001/product/FIKarate, response: {}</pre>
       </div>
     </div>
   </div>
@@ -4272,7 +4338,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">035ms</span>
+  <span class="lead-duration duration">022ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-81">
@@ -4334,7 +4400,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">path 'DeleteInvalidId'</span>
   
-  <span class="lead-duration duration">004ms</span>
+  <span class="lead-duration duration">003ms</span>
 
   </div>
 
@@ -4355,7 +4421,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method DELETE</span>
   
-  <span class="lead-duration duration">030ms</span>
+  <span class="lead-duration duration">018ms</span>
 
   </div>
 
@@ -4370,19 +4436,19 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-83" class="collapse collapsable-details">
-        <pre>22:35:38.846 request:
+        <pre>23:30:25.854 request:
 1 &gt; DELETE http://localhost:3001/product/DeleteInvalidId
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: localhost:3001
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
 
-22:35:38.873 response time in milliseconds: 26.54
+23:30:25.869 response time in milliseconds: 14.10
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 8
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; Date: Tue, 29 Jun 2021 21:30:25 GMT
 1 &lt; ETag: W/&quot;8-n0YJKrHUKcfFFsBWNRxRXtMEn2Q&quot;
 1 &lt; Keep-Alive: timeout=5
 1 &lt; X-Powered-By: Express
@@ -4411,10 +4477,10 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-84">
-          <a>com.intuit.karate.exception.KarateException: Products.feature:224 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/DeleteInvalidId, response: {&quot;ok&quot;:0}</a>
+          <a>com.intuit.karate.exception.KarateException: Products.feature:224 - status code was: 200, expected: 400, response time: 14, url: http://localhost:3001/product/DeleteInvalidId, response: {&quot;ok&quot;:0}</a>
       </div>
       <div id="msg-84" class="collapse collapsable-details  in ">
-        <pre>com.intuit.karate.exception.KarateException: Products.feature:224 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/DeleteInvalidId, response: {&quot;ok&quot;:0}</pre>
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:224 - status code was: 200, expected: 400, response time: 14, url: http://localhost:3001/product/DeleteInvalidId, response: {&quot;ok&quot;:0}</pre>
       </div>
     </div>
   </div>
@@ -4428,7 +4494,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-85" class="collapse collapsable-details">
-        <pre>22:35:38.873 status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/DeleteInvalidId, response: {&quot;ok&quot;:0}</pre>
+        <pre>23:30:25.870 status code was: 200, expected: 400, response time: 14, url: http://localhost:3001/product/DeleteInvalidId, response: {&quot;ok&quot;:0}</pre>
       </div>
     </div>
   </div>

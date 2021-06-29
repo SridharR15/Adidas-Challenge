@@ -15,7 +15,7 @@ Feature: Products
 			* def productId = "HI347"
 			* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]")
 			And match out[0].price == 82
-			And match out[0].description == "TestCreateNewproduct"
+			And match out[0].description == "description"
 			And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg"
 		Scenario: Get a Product
 	    Given path '/product'
