@@ -1,0 +1,130 @@
+<testsuite failures="1" name="features/Products Review.feature" skipped="0" tests="4" time="2.321438">
+  <testcase classname="features.Products Review" name="Post a Review" time="2.22415">
+    <failure message="Products Review.feature:21 - path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal">* url productreviewbaseUrl ................................................ passed
+* def jsonBody = .......................................................... passed
+Given path '/reviews' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+And match response.productId == "FI444" ................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products Review.feature:21 - path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal&#13;
+	at ✽.And match response.productId == "FI444" (Products Review.feature:21)&#13;
+
+And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" ................. skipped
+And match response.rating == 5 ............................................ skipped
+And match response.text == "Karate Testing Review" ........................ skipped</failure>
+  </testcase>
+  <testcase classname="features.Products Review" name="Get a Review" time="0.044192">
+    <system-out>* url productreviewbaseUrl ................................................ passed
+* def jsonBody = .......................................................... passed
+Given path '/reviews' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+And match response.productId == "FI444" ................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products Review.feature:21 - path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal&#13;
+	at ✽.And match response.productId == "FI444" (Products Review.feature:21)&#13;
+
+And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" ................. skipped
+And match response.rating == 5 ............................................ skipped
+And match response.text == "Karate Testing Review" ........................ skipped
+* url productreviewbaseUrl ................................................ passed
+Given path '/reviews' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response[0].productId == "FIKarate" ............................. passed
+And match response[0].rating == 5 ......................................... passed
+And match response[0].text == "Karate Testing Review" ..................... passed</system-out>
+  </testcase>
+  <testcase classname="features.Products Review" name="Post a Invalid Review" time="0.02087">
+    <system-out>* url productreviewbaseUrl ................................................ passed
+* def jsonBody = .......................................................... passed
+Given path '/reviews' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+And match response.productId == "FI444" ................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products Review.feature:21 - path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal&#13;
+	at ✽.And match response.productId == "FI444" (Products Review.feature:21)&#13;
+
+And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" ................. skipped
+And match response.rating == 5 ............................................ skipped
+And match response.text == "Karate Testing Review" ........................ skipped
+* url productreviewbaseUrl ................................................ passed
+Given path '/reviews' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response[0].productId == "FIKarate" ............................. passed
+And match response[0].rating == 5 ......................................... passed
+And match response[0].text == "Karate Testing Review" ..................... passed
+* url productreviewbaseUrl ................................................ passed
+* def jsonBody = .......................................................... passed
+Given path '/reviews' ..................................................... passed
+And path 'InvalidID' ...................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+And match response.productId == "InvalidID" ............................... passed</system-out>
+  </testcase>
+  <testcase classname="features.Products Review" name="Get a Review with Invalid ID" time="0.032225">
+    <system-out>* url productreviewbaseUrl ................................................ passed
+* def jsonBody = .......................................................... passed
+Given path '/reviews' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+And match response.productId == "FI444" ................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products Review.feature:21 - path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal&#13;
+	at ✽.And match response.productId == "FI444" (Products Review.feature:21)&#13;
+
+And match response.locale == "en-GB,en-US;q=0.9,en;q=0.8" ................. skipped
+And match response.rating == 5 ............................................ skipped
+And match response.text == "Karate Testing Review" ........................ skipped
+* url productreviewbaseUrl ................................................ passed
+Given path '/reviews' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response[0].productId == "FIKarate" ............................. passed
+And match response[0].rating == 5 ......................................... passed
+And match response[0].text == "Karate Testing Review" ..................... passed
+* url productreviewbaseUrl ................................................ passed
+* def jsonBody = .......................................................... passed
+Given path '/reviews' ..................................................... passed
+And path 'InvalidID' ...................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+And match response.productId == "InvalidID" ............................... passed
+* url productreviewbaseUrl ................................................ passed
+Given path '/reviews' ..................................................... passed
+And path 'InvalidKarateID' ................................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And assert response.length == 0 ........................................... passed</system-out>
+  </testcase>
+</testsuite>

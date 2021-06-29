@@ -1,0 +1,1041 @@
+22:35:34.344 karate.env system property was:  
+22:35:34.344 karate.env system property was: local 
+22:35:36.471 request:
+1 > POST http://localhost:3002/reviews/FIKarate
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 101
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3002
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{"productId":"FI444","locale":"en-GB,en-US;q=0.9,en;q=0.8","rating":5,"text":"Karate Testing Review"}
+
+22:35:36.708 response time in milliseconds: 234.09
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Length: 66
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:36 GMT
+1 < ETag: W/"42-9sDNi2RFjuwePwGntKuSudUGXjQ"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"productId":"FIKarate","rating":5,"text":"Karate Testing Review"}
+
+22:35:36.711 [print] {
+  "productId": "FIKarate",
+  "rating": 5,
+  "text": "Karate Testing Review"
+}
+
+22:35:36.721 assertion failed: path: $.productId, actual: 'FIKarate', expected: 'FI444', reason: not equal
+22:35:36.737 karate.env system property was:  
+22:35:36.738 karate.env system property was: local 
+22:35:36.744 request:
+1 > GET http://localhost:3002/reviews/FIKarate
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3002
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+22:35:36.760 response time in milliseconds: 14.42
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 604
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:36 GMT
+1 < ETag: W/"25c-YoS3381X6Cnb5MQ4vHFOTM/LC2E"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+[{"productId":"FIKarate","rating":5,"text":"Karate Testing Review"},{"productId":"FIKarate","rating":5,"text":"Karate Testing Review"},{"productId":"FIKarate","rating":5,"text":"Karate Testing Review"},{"productId":"FIKarate","rating":5,"text":"Karate Testing Review"},{"productId":"FIKarate","rating":5,"text":"Karate Testing Review"},{"productId":"FIKarate","rating":5,"text":"Karate Testing Review"},{"productId":"FIKarate","rating":5,"text":"Karate Testing Review"},{"productId":"FIKarate","rating":5,"text":"Karate Testing Review"},{"productId":"FIKarate","rating":5,"text":"Karate Testing Review"}]
+
+22:35:36.762 [print] [
+  {
+    "productId": "FIKarate",
+    "rating": 5,
+    "text": "Karate Testing Review"
+  },
+  {
+    "productId": "FIKarate",
+    "rating": 5,
+    "text": "Karate Testing Review"
+  },
+  {
+    "productId": "FIKarate",
+    "rating": 5,
+    "text": "Karate Testing Review"
+  },
+  {
+    "productId": "FIKarate",
+    "rating": 5,
+    "text": "Karate Testing Review"
+  },
+  {
+    "productId": "FIKarate",
+    "rating": 5,
+    "text": "Karate Testing Review"
+  },
+  {
+    "productId": "FIKarate",
+    "rating": 5,
+    "text": "Karate Testing Review"
+  },
+  {
+    "productId": "FIKarate",
+    "rating": 5,
+    "text": "Karate Testing Review"
+  },
+  {
+    "productId": "FIKarate",
+    "rating": 5,
+    "text": "Karate Testing Review"
+  },
+  {
+    "productId": "FIKarate",
+    "rating": 5,
+    "text": "Karate Testing Review"
+  }
+]
+
+22:35:36.803 karate.env system property was:  
+22:35:36.804 karate.env system property was: local 
+22:35:36.811 request:
+1 > POST http://localhost:3002/reviews/InvalidID
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3002
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{}
+
+22:35:36.823 response time in milliseconds: 10.59
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Length: 25
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:36 GMT
+1 < ETag: W/"19-eT963xoZSgv1+fppZqWdUff3zv8"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"productId":"InvalidID"}
+
+22:35:36.824 [print] {
+  "productId": "InvalidID"
+}
+
+22:35:36.837 karate.env system property was:  
+22:35:36.837 karate.env system property was: local 
+22:35:36.845 request:
+1 > GET http://localhost:3002/reviews/InvalidKarateID
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3002
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+22:35:36.856 response time in milliseconds: 9.19
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:36 GMT
+1 < ETag: W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+[]
+
+22:35:36.857 [print] [
+]
+
+22:35:37.071 karate.env system property was:  
+22:35:37.072 karate.env system property was: local 
+22:35:37.080 request:
+1 > GET http://localhost:3001/product
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+22:35:37.343 response time in milliseconds: 260.98
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 11955
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:37 GMT
+1 < ETag: W/"2eb3-6OVAXJ9pqSJmOVFBgXAYotgf46E"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+[{"currency":"$","price":96,"name":"string","description":"string","imgUrl":"string"},{"currency":"$","price":94,"id":"FI444","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg"},{"currency":"$","price":99,"id":"HI333","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c7099422ccc14e44b406abec00ba6c96_9366/NMD_R1_V2_Shoes_Black_FY6862_01_standard.jpg"},{"currency":"$","price":94,"id":"HI334","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c93fa315d2f64775ac1fab96016f09d1_9366/Dame_6_Shoes_Black_FV8624_01_standard.jpg"},{"currency":"$","price":95,"id":"HI336","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/3eebc0498b1347e397f8ab94016140ba_9366/FS1496_00_plp_standard.jpg"},{"currency":"$","price":27,"id":"HI337","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/f7b3df22026b42b8b539a9d300adb52b_9366/DZ9416_00_plp_standard.jpg"},{"currency":"$","price":27,"id":"HI338","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/c089e9b31e01406bbee5abc9009a421e_9366/FV9996_00_plp_standard.jpg"},{"currency":"$","price":41,"id":"HI339","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/da278c9c5e244068b32cac4d0125fedd_9366/FY2002_00_plp_standard.jpg"},{"currency":"$","price":7,"id":"HI340","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/3e13d15c862749708801ac4d01257e1c_9366/FY0072_00_plp_standard.jpg"},{"currency":"$","price":95,"id":"HI341","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/dd6788b5e79742c3bfbaac4e00f57272_9366/FY9386_00_plp_standard.jpg"},{"currency":"$","price":84,"id":"HI342","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/807d251c686648de85f2abb10042fdf9_9366/GC7240_01_laydown.jpg"},{"currency":"$","price":82,"id":"HI343","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/64a622f71145430cad1fabaa00590751_9366/GI7430_01_laydown.jpg"},{"currency":"$","price":60,"id":"HI344","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/bae82f2b58e7466aba6daba30141b1d4_9366/GD8454_01_laydown.jpg"},{"currency":"$","price":31,"id":"HI345","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/12b53067c3f44d3f90f3ac4d0139f637_9366/GZ2751_00_plp_standard.jpg"},{"currency":"$","price":53,"id":"HI346","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c4ea90c85fce47db8e33ab8e00fcff20_9366/GD2372_01_laydown.jpg"},{"currency":"$","price":82,"id":"HI347","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/0fcb1719675b4df0a160ab1a0104630b_9366/GD3509_01_laydown.jpg"},{"currency":"$","price":1,"id":"HI348","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/22f397edbd074cb180f4ab5000c7aebf_9366/GD2328_01_laydown.jpg"},{"currency":"$","price":2,"id":"HI349","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/81b52cbaa4b3426b88fbabc20094e778_9366/GD4557_00_plp_standard.jpg"},{"currency":"$","price":37,"id":"HI350","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/09011a8bf86941bfaaa5ac4d01258fef_9366/FY0075_00_plp_standard.jpg"},{"currency":"$","price":12,"id":"HI351","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/b8c9ddc4ada74d9fb819ac450127c685_9366/FY0965_00_plp_standard.jpg"},{"currency":"$","price":96},{"currency":"$","price":96},{"currency":"$","price":96},{"currency":"$","price":6,"id":"HI777","name":null,"description":null,"imgUrl":"https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/b8c9ddc4ada74d9fb819ac450127c685_9366/FY0965_00_plp_standard.jpg"},{"currency":"$","price":96},{"currency":"$","price":96,"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c4ea90c85fce47db8e33ab8e0ghgh0fcff20_9366/GD2372_01_laydown.jpg"},{"currency":"$","price":96,"name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":96},{"currency":"$","price":96,"name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":96},{"currency":"$","price":73,"id":"FIKarate","name":null,"description":null,"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":96,"name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork"},{"currency":"$","price":96},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":96,"name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork"},{"currency":"$","price":96},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":96,"name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork"},{"currency":"$","price":96},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":96,"name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork"},{"currency":"$","price":96},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":96,"name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork"},{"currency":"$","price":96},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":96,"name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"},{"currency":"$","price":73,"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork"},{"currency":"$","price":96}]
+
+22:35:37.371 [print] [
+  {
+    "imgUrl": "string",
+    "price": 96,
+    "name": "string",
+    "description": "string",
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg",
+    "price": 94,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "FI444"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c7099422ccc14e44b406abec00ba6c96_9366/NMD_R1_V2_Shoes_Black_FY6862_01_standard.jpg",
+    "price": 99,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI333"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c93fa315d2f64775ac1fab96016f09d1_9366/Dame_6_Shoes_Black_FV8624_01_standard.jpg",
+    "price": 94,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI334"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/3eebc0498b1347e397f8ab94016140ba_9366/FS1496_00_plp_standard.jpg",
+    "price": 95,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI336"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/f7b3df22026b42b8b539a9d300adb52b_9366/DZ9416_00_plp_standard.jpg",
+    "price": 27,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI337"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/c089e9b31e01406bbee5abc9009a421e_9366/FV9996_00_plp_standard.jpg",
+    "price": 27,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI338"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/da278c9c5e244068b32cac4d0125fedd_9366/FY2002_00_plp_standard.jpg",
+    "price": 41,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI339"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/3e13d15c862749708801ac4d01257e1c_9366/FY0072_00_plp_standard.jpg",
+    "price": 7,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI340"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/dd6788b5e79742c3bfbaac4e00f57272_9366/FY9386_00_plp_standard.jpg",
+    "price": 95,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI341"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/807d251c686648de85f2abb10042fdf9_9366/GC7240_01_laydown.jpg",
+    "price": 84,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI342"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/64a622f71145430cad1fabaa00590751_9366/GI7430_01_laydown.jpg",
+    "price": 82,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI343"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/bae82f2b58e7466aba6daba30141b1d4_9366/GD8454_01_laydown.jpg",
+    "price": 60,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI344"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/12b53067c3f44d3f90f3ac4d0139f637_9366/GZ2751_00_plp_standard.jpg",
+    "price": 31,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI345"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c4ea90c85fce47db8e33ab8e00fcff20_9366/GD2372_01_laydown.jpg",
+    "price": 53,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI346"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/0fcb1719675b4df0a160ab1a0104630b_9366/GD3509_01_laydown.jpg",
+    "price": 82,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI347"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/22f397edbd074cb180f4ab5000c7aebf_9366/GD2328_01_laydown.jpg",
+    "price": 1,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI348"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/81b52cbaa4b3426b88fbabc20094e778_9366/GD4557_00_plp_standard.jpg",
+    "price": 2,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI349"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/09011a8bf86941bfaaa5ac4d01258fef_9366/FY0075_00_plp_standard.jpg",
+    "price": 37,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI350"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/b8c9ddc4ada74d9fb819ac450127c685_9366/FY0965_00_plp_standard.jpg",
+    "price": 12,
+    "name": "product",
+    "description": "description",
+    "currency": "$",
+    "id": "HI351"
+  },
+  {
+    "price": 96,
+    "currency": "$"
+  },
+  {
+    "price": 96,
+    "currency": "$"
+  },
+  {
+    "price": 96,
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/b8c9ddc4ada74d9fb819ac450127c685_9366/FY0965_00_plp_standard.jpg",
+    "price": 6,
+    "name": null,
+    "description": null,
+    "currency": "$",
+    "id": "HI777"
+  },
+  {
+    "price": 96,
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c4ea90c85fce47db8e33ab8e0ghgh0fcff20_9366/GD2372_01_laydown.jpg",
+    "price": 96,
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 96,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$"
+  },
+  {
+    "price": 96,
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 96,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$"
+  },
+  {
+    "price": 96,
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "name": null,
+    "description": null,
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 96,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "name": "KaratePost",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "price": 73,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "price": 96,
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 96,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "name": "KaratePost",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "price": 73,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "price": 96,
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 96,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "name": "KaratePost",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "price": 73,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "price": 96,
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 96,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "name": "KaratePost",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "price": 73,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "price": 96,
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 96,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "name": "KaratePost",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "price": 73,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "price": 96,
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 96,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+    "price": 73,
+    "name": "KaratePost",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "price": 73,
+    "name": "KaratePost",
+    "description": "A product for Karate framwork",
+    "currency": "$",
+    "id": "FIKarate"
+  },
+  {
+    "price": 96,
+    "currency": "$"
+  }
+]
+
+22:35:37.783 assertion failed: path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal
+22:35:37.823 karate.env system property was:  
+22:35:37.826 karate.env system property was: local 
+22:35:37.850 request:
+1 > GET http://localhost:3001/product/FI444
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+22:35:37.866 response time in milliseconds: 14.27
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 257
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:37 GMT
+1 < ETag: W/"101-45wUMJY2BYRr2VdXMWbiK+t2tcw"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"currency":"$","price":94,"id":"FI444","name":"product","description":"description","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg"}
+
+22:35:37.868 [print] {
+  "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg",
+  "price": 94,
+  "name": "product",
+  "description": "description",
+  "currency": "$",
+  "id": "FI444"
+}
+
+22:35:37.879 karate.env system property was:  
+22:35:37.880 karate.env system property was: local 
+22:35:37.886 request:
+1 > POST http://localhost:3001/product
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 221
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"}
+
+22:35:37.897 response time in milliseconds: 9.29
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 254
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:37 GMT
+1 < ETag: W/"fe-zwcLwQIOpHFQQ9yl9OnZFkk9hIg"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","_id":"60db841974566a8a53e101ac"}
+
+22:35:37.898 [print] {
+  "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+  "name": "KaratePost",
+  "description": "A product for Karate framwork",
+  "id": "FIKarate",
+  "_id": "60db841974566a8a53e101ac"
+}
+
+22:35:37.924 karate.env system property was:  
+22:35:37.925 karate.env system property was: local 
+22:35:37.931 request:
+1 > PUT http://localhost:3001/product/FIKarate
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 195
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{"id":"FIKarate","name":"RugbyBall","description":"Ball","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"}
+
+22:35:37.945 response time in milliseconds: 12.26
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 195
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:37 GMT
+1 < ETag: W/"c3-dythZYpfbn84COTULEtHixfoe4U"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"id":"FIKarate","name":"RugbyBall","description":"Ball","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"}
+
+22:35:37.946 [print] {
+  "imgUrl": "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg",
+  "name": "RugbyBall",
+  "description": "Ball",
+  "id": "FIKarate"
+}
+
+22:35:37.950 assertion failed: path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal
+22:35:37.960 karate.env system property was:  
+22:35:37.960 karate.env system property was: local 
+22:35:37.965 request:
+1 > DELETE http://localhost:3001/product/FIKarate
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+22:35:37.978 response time in milliseconds: 12.32
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 8
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:37 GMT
+1 < ETag: W/"8-Nv24HbD1i+MHVjOdNPLzttklKUw"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"ok":1}
+
+22:35:37.979 [print] {
+  "ok": 1
+}
+
+22:35:37.989 karate.env system property was:  
+22:35:37.990 karate.env system property was: local 
+22:35:38.002 request:
+1 > GET http://localhost:3001/product/FI000
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+22:35:38.037 response time in milliseconds: 31.59
+1 < 500
+1 < Connection: keep-alive
+1 < Content-Length: 588
+1 < Content-Security-Policy: default-src 'self'
+1 < Content-Type: text/html; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 < Keep-Alive: timeout=5
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>TypeError: Cannot read property &#39;id&#39; of null<br> &nbsp; &nbsp;at ProductService.&lt;anonymous&gt; (/app/service/product.js:187:107)<br> &nbsp; &nbsp;at step (/app/service/product.js:44:23)<br> &nbsp; &nbsp;at Object.next (/app/service/product.js:25:53)<br> &nbsp; &nbsp;at fulfilled (/app/service/product.js:16:58)<br> &nbsp; &nbsp;at runMicrotasks (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at processTicksAndRejections (internal/process/task_queues.js:93:5)</pre>
+</body>
+</html>
+
+
+22:35:38.082 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 3; The element type "meta" must be terminated by the matching end-tag "</meta>".
+22:35:38.082 [print] <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>TypeError: Cannot read property &#39;id&#39; of null<br> &nbsp; &nbsp;at ProductService.&lt;anonymous&gt; (/app/service/product.js:187:107)<br> &nbsp; &nbsp;at step (/app/service/product.js:44:23)<br> &nbsp; &nbsp;at Object.next (/app/service/product.js:25:53)<br> &nbsp; &nbsp;at fulfilled (/app/service/product.js:16:58)<br> &nbsp; &nbsp;at runMicrotasks (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at processTicksAndRejections (internal/process/task_queues.js:93:5)</pre>
+</body>
+</html>
+
+22:35:38.095 karate.env system property was:  
+22:35:38.096 karate.env system property was: local 
+22:35:38.105 request:
+1 > POST http://localhost:3001/product
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 205
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{"name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"}
+
+22:35:38.128 response time in milliseconds: 21.68
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 238
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 < ETag: W/"ee-dW44NSIBsFM0Gzd252jWOWkqJEs"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"name":"KaratePost","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","_id":"60db841a74566a27f7e101ad"}
+
+22:35:38.128 status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a27f7e101ad"}
+22:35:38.138 karate.env system property was:  
+22:35:38.138 karate.env system property was: local 
+22:35:38.146 request:
+1 > POST http://localhost:3001/product
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 201
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{"id":"FIKarate","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"}
+
+22:35:38.193 response time in milliseconds: 46.06
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 234
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 < ETag: W/"ea-NgoR1uPVM49W5cw28/dmyb6BP5A"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"id":"FIKarate","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","_id":"60db841a74566a2b0ce101ae"}
+
+22:35:38.194 status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a2b0ce101ae"}
+22:35:38.215 karate.env system property was:  
+22:35:38.216 karate.env system property was: local 
+22:35:38.222 request:
+1 > POST http://localhost:3001/product
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 175
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{"id":"FIKarate","name":"KaratePost","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"}
+
+22:35:38.246 response time in milliseconds: 23.27
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 208
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 < ETag: W/"d0-QnmH8Y+mX2gPGd1RlkiH9AQhbm4"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"id":"FIKarate","name":"KaratePost","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","_id":"60db841a74566a2165e101af"}
+
+22:35:38.247 status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","id":"FIKarate","_id":"60db841a74566a2165e101af"}
+22:35:38.261 karate.env system property was:  
+22:35:38.262 karate.env system property was: local 
+22:35:38.266 request:
+1 > POST http://localhost:3001/product
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 83
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork"}
+
+22:35:38.291 response time in milliseconds: 22.71
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 116
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 < ETag: W/"74-mrkLri5pkdACaqrGFaFBjkJOg+0"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"id":"FIKarate","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a60dce101b0"}
+
+22:35:38.293 status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"name":"KaratePost","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a60dce101b0"}
+22:35:38.332 karate.env system property was:  
+22:35:38.334 karate.env system property was: local 
+22:35:38.342 request:
+1 > POST http://localhost:3001/product
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{}
+
+22:35:38.370 response time in milliseconds: 26.13
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 34
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 < ETag: W/"22-qDn5Eg6zsnZ0RD5nEiFc5h6kDWU"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"_id":"60db841a74566a55e0e101b1"}
+
+22:35:38.371 status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {"_id":"60db841a74566a55e0e101b1"}
+22:35:38.385 karate.env system property was:  
+22:35:38.386 karate.env system property was: local 
+22:35:38.404 request:
+1 > PUT http://localhost:3001/product/FIKarate
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 204
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{"name":"KaratePut","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"}
+
+22:35:38.464 response time in milliseconds: 58.64
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 204
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 < ETag: W/"cc-Gz5S8NBYw7YymVfsIHKwfe3N9LM"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"name":"KaratePut","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"}
+
+22:35:38.465 status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePut","description":"A product for Karate framwork"}
+22:35:38.485 karate.env system property was:  
+22:35:38.486 karate.env system property was: local 
+22:35:38.494 request:
+1 > PUT http://localhost:3001/product/FIKarate
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 201
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{"id":"FIKarate","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"}
+
+22:35:38.588 response time in milliseconds: 90.17
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 201
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 < ETag: W/"c9-mdmPmv1G6nEbXgtsue/7ANHrbX4"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"id":"FIKarate","description":"A product for Karate framwork","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"}
+
+22:35:38.590 status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate"}
+22:35:38.609 karate.env system property was:  
+22:35:38.610 karate.env system property was: local 
+22:35:38.614 request:
+1 > PUT http://localhost:3001/product/FIKarate
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 174
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{"id":"FIKarate","name":"KaratePut","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"}
+
+22:35:38.642 response time in milliseconds: 26.59
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 174
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 < ETag: W/"ae-AXxkBt+fYNBixaVrdYrHViFzPfc"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"id":"FIKarate","name":"KaratePut","imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg"}
+
+22:35:38.643 status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePut","id":"FIKarate"}
+22:35:38.655 karate.env system property was:  
+22:35:38.656 karate.env system property was: local 
+22:35:38.661 request:
+1 > PUT http://localhost:3001/product/FIKarate
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 82
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{"id":"FIKarate","name":"KaratePut","description":"A product for Karate framwork"}
+
+22:35:38.720 response time in milliseconds: 58.61
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 82
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 < ETag: W/"52-d4N44WQr3YSsVVw7ztkeij9sgYw"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"id":"FIKarate","name":"KaratePut","description":"A product for Karate framwork"}
+
+22:35:38.721 status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {"name":"KaratePut","description":"A product for Karate framwork","id":"FIKarate"}
+22:35:38.734 karate.env system property was:  
+22:35:38.734 karate.env system property was: local 
+22:35:38.758 request:
+1 > PUT http://localhost:3001/product/FIKarate
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{}
+
+22:35:38.820 response time in milliseconds: 60.42
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 < ETag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{}
+
+22:35:38.821 status code was: 200, expected: 400, response time: 60, url: http://localhost:3001/product/FIKarate, response: {}
+22:35:38.837 karate.env system property was:  
+22:35:38.837 karate.env system property was: local 
+22:35:38.846 request:
+1 > DELETE http://localhost:3001/product/DeleteInvalidId
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3001
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+22:35:38.873 response time in milliseconds: 26.54
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Length: 8
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 < ETag: W/"8-n0YJKrHUKcfFFsBWNRxRXtMEn2Q"
+1 < Keep-Alive: timeout=5
+1 < X-Powered-By: Express
+{"ok":0}
+
+22:35:38.873 status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/DeleteInvalidId, response: {"ok":0}

@@ -1,0 +1,6602 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: features/Products.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>End To End Api Test Cases Runner</td>
+            <td>29 Jun 2021, 22:35</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">features/Products.feature</td>
+                    <td      class="passed"    >114</td>
+          <td      class="failed"    >13</td>
+          <td     class="skipped"   >14</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">141</td>
+
+          <td  class="passed"    >4</td>
+          <td  class="failed"    >13</td>
+          <td class="total">17</td>
+
+          <td class="duration" data-value="1424322500">1s 424ms</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">features/Products.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Products</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>22:35:37.071 karate.env system property was:  
+22:35:37.072 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">683ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get All Products</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">273ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>22:35:37.080 request:
+1 &gt; GET http://localhost:3001/product
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+22:35:37.343 response time in milliseconds: 260.98
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 11955
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:37 GMT
+1 &lt; ETag: W/&quot;2eb3-6OVAXJ9pqSJmOVFBgXAYotgf46E&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+[{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;string&quot;,&quot;description&quot;:&quot;string&quot;,&quot;imgUrl&quot;:&quot;string&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:94,&quot;id&quot;:&quot;FI444&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:99,&quot;id&quot;:&quot;HI333&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c7099422ccc14e44b406abec00ba6c96_9366/NMD_R1_V2_Shoes_Black_FY6862_01_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:94,&quot;id&quot;:&quot;HI334&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c93fa315d2f64775ac1fab96016f09d1_9366/Dame_6_Shoes_Black_FV8624_01_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:95,&quot;id&quot;:&quot;HI336&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/3eebc0498b1347e397f8ab94016140ba_9366/FS1496_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:27,&quot;id&quot;:&quot;HI337&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/f7b3df22026b42b8b539a9d300adb52b_9366/DZ9416_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:27,&quot;id&quot;:&quot;HI338&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/c089e9b31e01406bbee5abc9009a421e_9366/FV9996_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:41,&quot;id&quot;:&quot;HI339&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/da278c9c5e244068b32cac4d0125fedd_9366/FY2002_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:7,&quot;id&quot;:&quot;HI340&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/3e13d15c862749708801ac4d01257e1c_9366/FY0072_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:95,&quot;id&quot;:&quot;HI341&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/dd6788b5e79742c3bfbaac4e00f57272_9366/FY9386_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:84,&quot;id&quot;:&quot;HI342&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/807d251c686648de85f2abb10042fdf9_9366/GC7240_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:82,&quot;id&quot;:&quot;HI343&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/64a622f71145430cad1fabaa00590751_9366/GI7430_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:60,&quot;id&quot;:&quot;HI344&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/bae82f2b58e7466aba6daba30141b1d4_9366/GD8454_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:31,&quot;id&quot;:&quot;HI345&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/12b53067c3f44d3f90f3ac4d0139f637_9366/GZ2751_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:53,&quot;id&quot;:&quot;HI346&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c4ea90c85fce47db8e33ab8e00fcff20_9366/GD2372_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:82,&quot;id&quot;:&quot;HI347&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/0fcb1719675b4df0a160ab1a0104630b_9366/GD3509_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:1,&quot;id&quot;:&quot;HI348&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/22f397edbd074cb180f4ab5000c7aebf_9366/GD2328_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:2,&quot;id&quot;:&quot;HI349&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/81b52cbaa4b3426b88fbabc20094e778_9366/GD4557_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:37,&quot;id&quot;:&quot;HI350&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/09011a8bf86941bfaaa5ac4d01258fef_9366/FY0075_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:12,&quot;id&quot;:&quot;HI351&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/b8c9ddc4ada74d9fb819ac450127c685_9366/FY0965_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:6,&quot;id&quot;:&quot;HI777&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/b8c9ddc4ada74d9fb819ac450127c685_9366/FY0965_00_plp_standard.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c4ea90c85fce47db8e33ab8e0ghgh0fcff20_9366/GD2372_01_laydown.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:null,&quot;description&quot;:null,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:73,&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;},{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:96}]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">021ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>22:35:37.371 [print] [
+  {
+    &quot;imgUrl&quot;: &quot;string&quot;,
+    &quot;price&quot;: 96,
+    &quot;name&quot;: &quot;string&quot;,
+    &quot;description&quot;: &quot;string&quot;,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg&quot;,
+    &quot;price&quot;: 94,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FI444&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c7099422ccc14e44b406abec00ba6c96_9366/NMD_R1_V2_Shoes_Black_FY6862_01_standard.jpg&quot;,
+    &quot;price&quot;: 99,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI333&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c93fa315d2f64775ac1fab96016f09d1_9366/Dame_6_Shoes_Black_FV8624_01_standard.jpg&quot;,
+    &quot;price&quot;: 94,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI334&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/3eebc0498b1347e397f8ab94016140ba_9366/FS1496_00_plp_standard.jpg&quot;,
+    &quot;price&quot;: 95,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI336&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/f7b3df22026b42b8b539a9d300adb52b_9366/DZ9416_00_plp_standard.jpg&quot;,
+    &quot;price&quot;: 27,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI337&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/c089e9b31e01406bbee5abc9009a421e_9366/FV9996_00_plp_standard.jpg&quot;,
+    &quot;price&quot;: 27,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI338&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/da278c9c5e244068b32cac4d0125fedd_9366/FY2002_00_plp_standard.jpg&quot;,
+    &quot;price&quot;: 41,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI339&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/3e13d15c862749708801ac4d01257e1c_9366/FY0072_00_plp_standard.jpg&quot;,
+    &quot;price&quot;: 7,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI340&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/dd6788b5e79742c3bfbaac4e00f57272_9366/FY9386_00_plp_standard.jpg&quot;,
+    &quot;price&quot;: 95,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI341&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/807d251c686648de85f2abb10042fdf9_9366/GC7240_01_laydown.jpg&quot;,
+    &quot;price&quot;: 84,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI342&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/64a622f71145430cad1fabaa00590751_9366/GI7430_01_laydown.jpg&quot;,
+    &quot;price&quot;: 82,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI343&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/bae82f2b58e7466aba6daba30141b1d4_9366/GD8454_01_laydown.jpg&quot;,
+    &quot;price&quot;: 60,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI344&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/12b53067c3f44d3f90f3ac4d0139f637_9366/GZ2751_00_plp_standard.jpg&quot;,
+    &quot;price&quot;: 31,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI345&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c4ea90c85fce47db8e33ab8e00fcff20_9366/GD2372_01_laydown.jpg&quot;,
+    &quot;price&quot;: 53,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI346&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/0fcb1719675b4df0a160ab1a0104630b_9366/GD3509_01_laydown.jpg&quot;,
+    &quot;price&quot;: 82,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI347&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/22f397edbd074cb180f4ab5000c7aebf_9366/GD2328_01_laydown.jpg&quot;,
+    &quot;price&quot;: 1,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI348&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/81b52cbaa4b3426b88fbabc20094e778_9366/GD4557_00_plp_standard.jpg&quot;,
+    &quot;price&quot;: 2,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI349&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/09011a8bf86941bfaaa5ac4d01258fef_9366/FY0075_00_plp_standard.jpg&quot;,
+    &quot;price&quot;: 37,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI350&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/b8c9ddc4ada74d9fb819ac450127c685_9366/FY0965_00_plp_standard.jpg&quot;,
+    &quot;price&quot;: 12,
+    &quot;name&quot;: &quot;product&quot;,
+    &quot;description&quot;: &quot;description&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI351&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_276,h_276,f_auto,q_auto:sensitive,fl_lossy/b8c9ddc4ada74d9fb819ac450127c685_9366/FY0965_00_plp_standard.jpg&quot;,
+    &quot;price&quot;: 6,
+    &quot;name&quot;: null,
+    &quot;description&quot;: null,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;HI777&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/c4ea90c85fce47db8e33ab8e0ghgh0fcff20_9366/GD2372_01_laydown.jpg&quot;,
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 96,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 96,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: null,
+    &quot;description&quot;: null,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 96,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 96,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 96,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 96,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 96,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 96,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 73,
+    &quot;name&quot;: &quot;KaratePost&quot;,
+    &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+    &quot;currency&quot;: &quot;$&quot;,
+    &quot;id&quot;: &quot;FIKarate&quot;
+  },
+  {
+    &quot;price&quot;: 96,
+    &quot;currency&quot;: &quot;$&quot;
+  }
+]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def productId = &quot;FI444&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def out = karate.jsonPath(response, &quot;$[?(@.id == '&quot; + productId + &quot;')]&quot;)</span>
+  
+  <span class="lead-duration duration">126ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match out[0].price == 94</span>
+  
+  <span class="lead-duration duration">077ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match out[0].description == &quot;description&quot;</span>
+  
+  <span class="lead-duration duration">056ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match out[0].imgUrl == &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg&quot;</span>
+  
+  <span class="lead-duration duration">047ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def productId = &quot;HI347&quot;</span>
+  
+  <span class="lead-duration duration">019ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def out = karate.jsonPath(response, &quot;$[?(@.id == '&quot; + productId + &quot;')]&quot;)</span>
+  
+  <span class="lead-duration duration">039ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match out[0].price == 82</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match out[0].description == &quot;TestCreateNewproduct&quot;</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>22:35:37.783 assertion failed: path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match out[0].imgUrl == &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>22:35:37.823 karate.env system property was:  
+22:35:37.826 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">033ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get a Product</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'FI444'</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">023ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>22:35:37.850 request:
+1 &gt; GET http://localhost:3001/product/FI444
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+22:35:37.866 response time in milliseconds: 14.27
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 257
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:37 GMT
+1 &lt; ETag: W/&quot;101-45wUMJY2BYRr2VdXMWbiK+t2tcw&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;currency&quot;:&quot;$&quot;,&quot;price&quot;:94,&quot;id&quot;:&quot;FI444&quot;,&quot;name&quot;:&quot;product&quot;,&quot;description&quot;:&quot;description&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>22:35:37.868 [print] {
+  &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg&quot;,
+  &quot;price&quot;: 94,
+  &quot;name&quot;: &quot;product&quot;,
+  &quot;description&quot;: &quot;description&quot;,
+  &quot;currency&quot;: &quot;$&quot;,
+  &quot;id&quot;: &quot;FI444&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.price == 94</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.description == &quot;description&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.imgUrl == &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>22:35:37.879 karate.env system property was:  
+22:35:37.880 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">028ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Post a Product</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-20" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>{
+  &quot;id&quot;: &quot;FIKarate&quot;,
+  &quot;name&quot;: &quot;KaratePost&quot;,
+  &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+  &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">012ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>22:35:37.886 request:
+1 &gt; POST http://localhost:3001/product
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 221
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
+
+22:35:37.897 response time in milliseconds: 9.29
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 254
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:37 GMT
+1 &lt; ETag: W/&quot;fe-zwcLwQIOpHFQQ9yl9OnZFkk9hIg&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;_id&quot;:&quot;60db841974566a8a53e101ac&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>22:35:37.898 [print] {
+  &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+  &quot;name&quot;: &quot;KaratePost&quot;,
+  &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+  &quot;id&quot;: &quot;FIKarate&quot;,
+  &quot;_id&quot;: &quot;60db841974566a8a53e101ac&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.id == &quot;FIKarate&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.name == &quot;KaratePost&quot;</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.description == &quot;A product for Karate framwork&quot;</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.imgUrl == &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response._id != null</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-26" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>22:35:37.924 karate.env system property was:  
+22:35:37.925 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">022ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-28">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Put a Product</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-28" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-29">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-29" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>{
+  &quot;id&quot;: &quot;FIKarate&quot;,
+  &quot;name&quot;: &quot;RugbyBall&quot;,
+  &quot;description&quot;:&quot;Ball&quot;,
+  &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'FIKarate'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method PUT</span>
+  
+  <span class="lead-duration duration">016ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>22:35:37.931 request:
+1 &gt; PUT http://localhost:3001/product/FIKarate
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 195
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;RugbyBall&quot;,&quot;description&quot;:&quot;Ball&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
+
+22:35:37.945 response time in milliseconds: 12.26
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 195
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:37 GMT
+1 &lt; ETag: W/&quot;c3-dythZYpfbn84COTULEtHixfoe4U&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;RugbyBall&quot;,&quot;description&quot;:&quot;Ball&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>22:35:37.946 [print] {
+  &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,
+  &quot;name&quot;: &quot;RugbyBall&quot;,
+  &quot;description&quot;: &quot;Ball&quot;,
+  &quot;id&quot;: &quot;FIKarate&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.id == &quot;FIKarate&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.name == &quot;KaratePut&quot;</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-33">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>22:35:37.950 assertion failed: path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.description == &quot;A product for Karate framwork&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.imgUrl == &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-35" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-36" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>22:35:37.960 karate.env system property was:  
+22:35:37.960 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">016ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-38">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Delete a Product</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-38" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-39">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-39" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'FIKarate'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method DELETE</span>
+  
+  <span class="lead-duration duration">015ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>22:35:37.965 request:
+1 &gt; DELETE http://localhost:3001/product/FIKarate
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+22:35:37.978 response time in milliseconds: 12.32
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 8
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:37 GMT
+1 &lt; ETag: W/&quot;8-Nv24HbD1i+MHVjOdNPLzttklKUw&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;ok&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>22:35:37.979 [print] {
+  &quot;ok&quot;: 1
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-42">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-42" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-43">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-43" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details">
+        <pre>22:35:37.989 karate.env system property was:  
+22:35:37.990 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">090ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-45">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get a Product with Invalid Product ID</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-45" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-46">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-46" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'FI000'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">085ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>22:35:38.002 request:
+1 &gt; GET http://localhost:3001/product/FI000
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+22:35:38.037 response time in milliseconds: 31.59
+1 &lt; 500
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 588
+1 &lt; Content-Security-Policy: default-src 'self'
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Error&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;pre&gt;TypeError: Cannot read property &amp;#39;id&amp;#39; of null&lt;br&gt; &amp;nbsp; &amp;nbsp;at ProductService.&amp;lt;anonymous&amp;gt; (/app/service/product.js:187:107)&lt;br&gt; &amp;nbsp; &amp;nbsp;at step (/app/service/product.js:44:23)&lt;br&gt; &amp;nbsp; &amp;nbsp;at Object.next (/app/service/product.js:25:53)&lt;br&gt; &amp;nbsp; &amp;nbsp;at fulfilled (/app/service/product.js:16:58)&lt;br&gt; &amp;nbsp; &amp;nbsp;at runMicrotasks (&amp;lt;anonymous&amp;gt;)&lt;br&gt; &amp;nbsp; &amp;nbsp;at processTicksAndRejections (internal/process/task_queues.js:93:5)&lt;/pre&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+22:35:38.082 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 3; The element type &quot;meta&quot; must be terminated by the matching end-tag &quot;&lt;/meta&gt;&quot;.</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 500</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>22:35:38.082 [print] &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Error&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;pre&gt;TypeError: Cannot read property &amp;#39;id&amp;#39; of null&lt;br&gt; &amp;nbsp; &amp;nbsp;at ProductService.&amp;lt;anonymous&amp;gt; (/app/service/product.js:187:107)&lt;br&gt; &amp;nbsp; &amp;nbsp;at step (/app/service/product.js:44:23)&lt;br&gt; &amp;nbsp; &amp;nbsp;at Object.next (/app/service/product.js:25:53)&lt;br&gt; &amp;nbsp; &amp;nbsp;at fulfilled (/app/service/product.js:16:58)&lt;br&gt; &amp;nbsp; &amp;nbsp;at runMicrotasks (&amp;lt;anonymous&amp;gt;)&lt;br&gt; &amp;nbsp; &amp;nbsp;at processTicksAndRejections (internal/process/task_queues.js:93:5)&lt;/pre&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-49">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-49" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-50">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-50" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details">
+        <pre>22:35:38.095 karate.env system property was:  
+22:35:38.096 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">029ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-52">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Post a Product with missing id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-52" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-53">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-53" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-54">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-54" class="collapse collapsable-details">
+        <pre>{
+  &quot;name&quot;: &quot;KaratePost&quot;,
+  &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+  &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">026ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>22:35:38.105 request:
+1 &gt; POST http://localhost:3001/product
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 205
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
+
+22:35:38.128 response time in milliseconds: 21.68
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 238
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; ETag: W/&quot;ee-dW44NSIBsFM0Gzd252jWOWkqJEs&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;_id&quot;:&quot;60db841a74566a27f7e101ad&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-56">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db841a74566a27f7e101ad&quot;}</a>
+      </div>
+      <div id="msg-56" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db841a74566a27f7e101ad&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-57">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-57" class="collapse collapsable-details">
+        <pre>22:35:38.128 status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db841a74566a27f7e101ad&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-58">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-58" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-59">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-59" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-60">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-60" class="collapse collapsable-details">
+        <pre>22:35:38.138 karate.env system property was:  
+22:35:38.138 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">053ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-61">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Post a Product with missing name</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-61" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-62">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-62" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-63">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-63" class="collapse collapsable-details">
+        <pre>{
+  &quot;id&quot;: &quot;FIKarate&quot;,
+  &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+  &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">052ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-64">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-64" class="collapse collapsable-details">
+        <pre>22:35:38.146 request:
+1 &gt; POST http://localhost:3001/product
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 201
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
+
+22:35:38.193 response time in milliseconds: 46.06
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 234
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; ETag: W/&quot;ea-NgoR1uPVM49W5cw28/dmyb6BP5A&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;_id&quot;:&quot;60db841a74566a2b0ce101ae&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-65">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2b0ce101ae&quot;}</a>
+      </div>
+      <div id="msg-65" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2b0ce101ae&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-66">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-66" class="collapse collapsable-details">
+        <pre>22:35:38.194 status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2b0ce101ae&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-67">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-67" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-68">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-68" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-69">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-69" class="collapse collapsable-details">
+        <pre>22:35:38.215 karate.env system property was:  
+22:35:38.216 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">028ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-70">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Post a Product with missing description</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-70" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-71">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-71" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-72">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-72" class="collapse collapsable-details">
+        <pre>{
+  &quot;id&quot;: &quot;FIKarate&quot;,
+  &quot;name&quot;: &quot;KaratePost&quot;,
+  &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">027ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-73">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-73" class="collapse collapsable-details">
+        <pre>22:35:38.222 request:
+1 &gt; POST http://localhost:3001/product
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 175
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
+
+22:35:38.246 response time in milliseconds: 23.27
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 208
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; ETag: W/&quot;d0-QnmH8Y+mX2gPGd1RlkiH9AQhbm4&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;_id&quot;:&quot;60db841a74566a2165e101af&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-74">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2165e101af&quot;}</a>
+      </div>
+      <div id="msg-74" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2165e101af&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-75">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-75" class="collapse collapsable-details">
+        <pre>22:35:38.247 status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2165e101af&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-76">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-76" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-77">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-77" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-78">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-78" class="collapse collapsable-details">
+        <pre>22:35:38.261 karate.env system property was:  
+22:35:38.262 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">029ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-79">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Post a Product with missing image URL</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-79" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-80">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-80" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-81">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-81" class="collapse collapsable-details">
+        <pre>{
+  &quot;id&quot;: &quot;FIKarate&quot;,
+  &quot;name&quot;: &quot;KaratePost&quot;,
+  &quot;description&quot;: &quot;A product for Karate framwork&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">027ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-82">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-82" class="collapse collapsable-details">
+        <pre>22:35:38.266 request:
+1 &gt; POST http://localhost:3001/product
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 83
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}
+
+22:35:38.291 response time in milliseconds: 22.71
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 116
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; ETag: W/&quot;74-mrkLri5pkdACaqrGFaFBjkJOg+0&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db841a74566a60dce101b0&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-83">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a60dce101b0&quot;}</a>
+      </div>
+      <div id="msg-83" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a60dce101b0&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-84">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-84" class="collapse collapsable-details">
+        <pre>22:35:38.293 status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a60dce101b0&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-85">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-85" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-86">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-86" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-87">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-87" class="collapse collapsable-details">
+        <pre>22:35:38.332 karate.env system property was:  
+22:35:38.334 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">032ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-88">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Post a Product with missing body</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-88" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-89">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-89" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-90">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-90" class="collapse collapsable-details">
+        <pre>{}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">032ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-91">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-91" class="collapse collapsable-details">
+        <pre>22:35:38.342 request:
+1 &gt; POST http://localhost:3001/product
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 2
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{}
+
+22:35:38.370 response time in milliseconds: 26.13
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 34
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; ETag: W/&quot;22-qDn5Eg6zsnZ0RD5nEiFc5h6kDWU&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;_id&quot;:&quot;60db841a74566a55e0e101b1&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-92">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {&quot;_id&quot;:&quot;60db841a74566a55e0e101b1&quot;}</a>
+      </div>
+      <div id="msg-92" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {&quot;_id&quot;:&quot;60db841a74566a55e0e101b1&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-93">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-93" class="collapse collapsable-details">
+        <pre>22:35:38.371 status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {&quot;_id&quot;:&quot;60db841a74566a55e0e101b1&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">001ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-94">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-94" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-95">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-95" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-96">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-96" class="collapse collapsable-details">
+        <pre>22:35:38.385 karate.env system property was:  
+22:35:38.386 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">067ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-97">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Put a Product with missing id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-97" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-98">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-98" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-99">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-99" class="collapse collapsable-details">
+        <pre>{
+  &quot;name&quot;: &quot;KaratePut&quot;,
+  &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+  &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'FIKarate'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method PUT</span>
+  
+  <span class="lead-duration duration">065ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-100">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-100" class="collapse collapsable-details">
+        <pre>22:35:38.404 request:
+1 &gt; PUT http://localhost:3001/product/FIKarate
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 204
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
+
+22:35:38.464 response time in milliseconds: 58.64
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 204
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; ETag: W/&quot;cc-Gz5S8NBYw7YymVfsIHKwfe3N9LM&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-101">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:162 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}</a>
+      </div>
+      <div id="msg-101" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:162 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-102">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-102" class="collapse collapsable-details">
+        <pre>22:35:38.465 status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-103">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-103" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-104">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-104" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-105">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-105" class="collapse collapsable-details">
+        <pre>22:35:38.485 karate.env system property was:  
+22:35:38.486 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">101ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-106">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Put a Product with missing name</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-106" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-107">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-107" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-108">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-108" class="collapse collapsable-details">
+        <pre>{
+  &quot;id&quot;: &quot;FIKarate&quot;,
+  &quot;description&quot;: &quot;A product for Karate framwork&quot;,
+  &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'FIKarate'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method PUT</span>
+  
+  <span class="lead-duration duration">099ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-109">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-109" class="collapse collapsable-details">
+        <pre>22:35:38.494 request:
+1 &gt; PUT http://localhost:3001/product/FIKarate
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 201
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
+
+22:35:38.588 response time in milliseconds: 90.17
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 201
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; ETag: W/&quot;c9-mdmPmv1G6nEbXgtsue/7ANHrbX4&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-110">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:177 - status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</a>
+      </div>
+      <div id="msg-110" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:177 - status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-111">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-111" class="collapse collapsable-details">
+        <pre>22:35:38.590 status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-112">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-112" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-113">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-113" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-114">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-114" class="collapse collapsable-details">
+        <pre>22:35:38.609 karate.env system property was:  
+22:35:38.610 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">031ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-115">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Put a Product with missing description</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-115" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-116">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-116" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-117">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-117" class="collapse collapsable-details">
+        <pre>{
+  &quot;id&quot;: &quot;FIKarate&quot;,
+  &quot;name&quot;: &quot;KaratePut&quot;,
+  &quot;imgUrl&quot;: &quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'FIKarate'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method PUT</span>
+  
+  <span class="lead-duration duration">030ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-118">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-118" class="collapse collapsable-details">
+        <pre>22:35:38.614 request:
+1 &gt; PUT http://localhost:3001/product/FIKarate
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 174
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}
+
+22:35:38.642 response time in milliseconds: 26.59
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 174
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; ETag: W/&quot;ae-AXxkBt+fYNBixaVrdYrHViFzPfc&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-119">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:192 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</a>
+      </div>
+      <div id="msg-119" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:192 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-120">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-120" class="collapse collapsable-details">
+        <pre>22:35:38.643 status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-121">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-121" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-122">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-122" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-123">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-123" class="collapse collapsable-details">
+        <pre>22:35:38.655 karate.env system property was:  
+22:35:38.656 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">065ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-124">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Put a Product with missing image URL</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-124" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-125">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-125" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-126">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-126" class="collapse collapsable-details">
+        <pre>{
+  &quot;id&quot;: &quot;FIKarate&quot;,
+  &quot;name&quot;: &quot;KaratePut&quot;,
+  &quot;description&quot;: &quot;A product for Karate framwork&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'FIKarate'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method PUT</span>
+  
+  <span class="lead-duration duration">063ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-127">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-127" class="collapse collapsable-details">
+        <pre>22:35:38.661 request:
+1 &gt; PUT http://localhost:3001/product/FIKarate
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 82
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}
+
+22:35:38.720 response time in milliseconds: 58.61
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 82
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; ETag: W/&quot;52-d4N44WQr3YSsVVw7ztkeij9sgYw&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;id&quot;:&quot;FIKarate&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-128">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:207 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</a>
+      </div>
+      <div id="msg-128" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:207 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-129">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-129" class="collapse collapsable-details">
+        <pre>22:35:38.721 status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-130">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-130" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-131">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-131" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-132">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-132" class="collapse collapsable-details">
+        <pre>22:35:38.734 karate.env system property was:  
+22:35:38.734 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">070ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-133">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Put a Product with missing body</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-133" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-134">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-134" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonBody =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-135">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-135" class="collapse collapsable-details">
+        <pre>{}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonBody</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'FIKarate'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method PUT</span>
+  
+  <span class="lead-duration duration">069ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-136">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-136" class="collapse collapsable-details">
+        <pre>22:35:38.758 request:
+1 &gt; PUT http://localhost:3001/product/FIKarate
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 2
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+{}
+
+22:35:38.820 response time in milliseconds: 60.42
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 2
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; ETag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-137">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:218 - status code was: 200, expected: 400, response time: 60, url: http://localhost:3001/product/FIKarate, response: {}</a>
+      </div>
+      <div id="msg-137" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:218 - status code was: 200, expected: 400, response time: 60, url: http://localhost:3001/product/FIKarate, response: {}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-138">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-138" class="collapse collapsable-details">
+        <pre>22:35:38.821 status code was: 200, expected: 400, response time: 60, url: http://localhost:3001/product/FIKarate, response: {}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-139">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-139" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-140">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-140" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url productbaseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-141">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-141" class="collapse collapsable-details">
+        <pre>22:35:38.837 karate.env system property was:  
+22:35:38.837 karate.env system property was: local</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">035ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-142">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Delete a Product with Invalid Id</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-142" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-143">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-143" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/product'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'DeleteInvalidId'</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method DELETE</span>
+  
+  <span class="lead-duration duration">030ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-144">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-144" class="collapse collapsable-details">
+        <pre>22:35:38.846 request:
+1 &gt; DELETE http://localhost:3001/product/DeleteInvalidId
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:3001
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_291)
+
+22:35:38.873 response time in milliseconds: 26.54
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 8
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 29 Jun 2021 20:35:38 GMT
+1 &lt; ETag: W/&quot;8-n0YJKrHUKcfFFsBWNRxRXtMEn2Q&quot;
+1 &lt; Keep-Alive: timeout=5
+1 &lt; X-Powered-By: Express
+{&quot;ok&quot;:0}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-145">
+          <a>com.intuit.karate.exception.KarateException: Products.feature:224 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/DeleteInvalidId, response: {&quot;ok&quot;:0}</a>
+      </div>
+      <div id="msg-145" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Products.feature:224 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/DeleteInvalidId, response: {&quot;ok&quot;:0}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-146">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-146" class="collapse collapsable-details">
+        <pre>22:35:38.873 status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/DeleteInvalidId, response: {&quot;ok&quot;:0}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

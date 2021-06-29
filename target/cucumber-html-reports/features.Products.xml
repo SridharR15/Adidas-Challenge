@@ -1,0 +1,1899 @@
+<testsuite failures="13" name="features/Products.feature" skipped="0" tests="17" time="1.424322">
+  <testcase classname="features.Products" name="Get All Products" time="0.683228">
+    <failure message="Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped</failure>
+  </testcase>
+  <testcase classname="features.Products" name="Get a Product" time="0.033799">
+    <system-out>* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed</system-out>
+  </testcase>
+  <testcase classname="features.Products" name="Post a Product" time="0.028775">
+    <system-out>* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed</system-out>
+  </testcase>
+  <testcase classname="features.Products" name="Put a Product" time="0.022197">
+    <failure message="Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped</failure>
+  </testcase>
+  <testcase classname="features.Products" name="Delete a Product" time="0.016771">
+    <system-out>* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="features.Products" name="Get a Product with Invalid Product ID" time="0.0903">
+    <system-out>* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI000' .......................................................... passed
+When method GET ........................................................... passed
+Then status 500 ........................................................... passed
+And print response ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="features.Products" name="Post a Product with missing id" time="0.029994">
+    <failure message="Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;_id&quot;:&quot;60db841a74566a27f7e101ad&quot;}">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI000' .......................................................... passed
+When method GET ........................................................... passed
+Then status 500 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a27f7e101ad"}&#13;
+	at ✽.Then status 400 (Products.feature:95)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="features.Products" name="Post a Product with missing name" time="0.053827">
+    <failure message="Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2b0ce101ae&quot;}">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI000' .......................................................... passed
+When method GET ........................................................... passed
+Then status 500 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a27f7e101ad"}&#13;
+	at ✽.Then status 400 (Products.feature:95)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a2b0ce101ae"}&#13;
+	at ✽.Then status 400 (Products.feature:109)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="features.Products" name="Post a Product with missing description" time="0.028365">
+    <failure message="Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePost&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a2165e101af&quot;}">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI000' .......................................................... passed
+When method GET ........................................................... passed
+Then status 500 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a27f7e101ad"}&#13;
+	at ✽.Then status 400 (Products.feature:95)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a2b0ce101ae"}&#13;
+	at ✽.Then status 400 (Products.feature:109)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","id":"FIKarate","_id":"60db841a74566a2165e101af"}&#13;
+	at ✽.Then status 400 (Products.feature:123)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="features.Products" name="Post a Product with missing image URL" time="0.029652">
+    <failure message="Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {&quot;name&quot;:&quot;KaratePost&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;,&quot;_id&quot;:&quot;60db841a74566a60dce101b0&quot;}">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI000' .......................................................... passed
+When method GET ........................................................... passed
+Then status 500 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a27f7e101ad"}&#13;
+	at ✽.Then status 400 (Products.feature:95)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a2b0ce101ae"}&#13;
+	at ✽.Then status 400 (Products.feature:109)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","id":"FIKarate","_id":"60db841a74566a2165e101af"}&#13;
+	at ✽.Then status 400 (Products.feature:123)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"name":"KaratePost","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a60dce101b0"}&#13;
+	at ✽.Then status 400 (Products.feature:137)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="features.Products" name="Post a Product with missing body" time="0.033024">
+    <failure message="Products.feature:147 - status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {&quot;_id&quot;:&quot;60db841a74566a55e0e101b1&quot;}">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI000' .......................................................... passed
+When method GET ........................................................... passed
+Then status 500 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a27f7e101ad"}&#13;
+	at ✽.Then status 400 (Products.feature:95)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a2b0ce101ae"}&#13;
+	at ✽.Then status 400 (Products.feature:109)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","id":"FIKarate","_id":"60db841a74566a2165e101af"}&#13;
+	at ✽.Then status 400 (Products.feature:123)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"name":"KaratePost","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a60dce101b0"}&#13;
+	at ✽.Then status 400 (Products.feature:137)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {"_id":"60db841a74566a55e0e101b1"}&#13;
+	at ✽.Then status 400 (Products.feature:147)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="features.Products" name="Put a Product with missing id" time="0.069626">
+    <failure message="Products.feature:162 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;}">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI000' .......................................................... passed
+When method GET ........................................................... passed
+Then status 500 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a27f7e101ad"}&#13;
+	at ✽.Then status 400 (Products.feature:95)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a2b0ce101ae"}&#13;
+	at ✽.Then status 400 (Products.feature:109)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","id":"FIKarate","_id":"60db841a74566a2165e101af"}&#13;
+	at ✽.Then status 400 (Products.feature:123)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"name":"KaratePost","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a60dce101b0"}&#13;
+	at ✽.Then status 400 (Products.feature:137)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {"_id":"60db841a74566a55e0e101b1"}&#13;
+	at ✽.Then status 400 (Products.feature:147)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:162 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePut","description":"A product for Karate framwork"}&#13;
+	at ✽.Then status 400 (Products.feature:162)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="features.Products" name="Put a Product with missing name" time="0.101258">
+    <failure message="Products.feature:177 - status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI000' .......................................................... passed
+When method GET ........................................................... passed
+Then status 500 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a27f7e101ad"}&#13;
+	at ✽.Then status 400 (Products.feature:95)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a2b0ce101ae"}&#13;
+	at ✽.Then status 400 (Products.feature:109)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","id":"FIKarate","_id":"60db841a74566a2165e101af"}&#13;
+	at ✽.Then status 400 (Products.feature:123)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"name":"KaratePost","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a60dce101b0"}&#13;
+	at ✽.Then status 400 (Products.feature:137)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {"_id":"60db841a74566a55e0e101b1"}&#13;
+	at ✽.Then status 400 (Products.feature:147)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:162 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePut","description":"A product for Karate framwork"}&#13;
+	at ✽.Then status 400 (Products.feature:162)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:177 - status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate"}&#13;
+	at ✽.Then status 400 (Products.feature:177)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="features.Products" name="Put a Product with missing description" time="0.031708">
+    <failure message="Products.feature:192 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/FIKarate, response: {&quot;imgUrl&quot;:&quot;https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg&quot;,&quot;name&quot;:&quot;KaratePut&quot;,&quot;id&quot;:&quot;FIKarate&quot;}">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI000' .......................................................... passed
+When method GET ........................................................... passed
+Then status 500 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a27f7e101ad"}&#13;
+	at ✽.Then status 400 (Products.feature:95)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a2b0ce101ae"}&#13;
+	at ✽.Then status 400 (Products.feature:109)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","id":"FIKarate","_id":"60db841a74566a2165e101af"}&#13;
+	at ✽.Then status 400 (Products.feature:123)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"name":"KaratePost","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a60dce101b0"}&#13;
+	at ✽.Then status 400 (Products.feature:137)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {"_id":"60db841a74566a55e0e101b1"}&#13;
+	at ✽.Then status 400 (Products.feature:147)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:162 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePut","description":"A product for Karate framwork"}&#13;
+	at ✽.Then status 400 (Products.feature:162)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:177 - status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate"}&#13;
+	at ✽.Then status 400 (Products.feature:177)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:192 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePut","id":"FIKarate"}&#13;
+	at ✽.Then status 400 (Products.feature:192)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="features.Products" name="Put a Product with missing image URL" time="0.065263">
+    <failure message="Products.feature:207 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {&quot;name&quot;:&quot;KaratePut&quot;,&quot;description&quot;:&quot;A product for Karate framwork&quot;,&quot;id&quot;:&quot;FIKarate&quot;}">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI000' .......................................................... passed
+When method GET ........................................................... passed
+Then status 500 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a27f7e101ad"}&#13;
+	at ✽.Then status 400 (Products.feature:95)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a2b0ce101ae"}&#13;
+	at ✽.Then status 400 (Products.feature:109)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","id":"FIKarate","_id":"60db841a74566a2165e101af"}&#13;
+	at ✽.Then status 400 (Products.feature:123)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"name":"KaratePost","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a60dce101b0"}&#13;
+	at ✽.Then status 400 (Products.feature:137)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {"_id":"60db841a74566a55e0e101b1"}&#13;
+	at ✽.Then status 400 (Products.feature:147)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:162 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePut","description":"A product for Karate framwork"}&#13;
+	at ✽.Then status 400 (Products.feature:162)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:177 - status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate"}&#13;
+	at ✽.Then status 400 (Products.feature:177)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:192 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePut","id":"FIKarate"}&#13;
+	at ✽.Then status 400 (Products.feature:192)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:207 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {"name":"KaratePut","description":"A product for Karate framwork","id":"FIKarate"}&#13;
+	at ✽.Then status 400 (Products.feature:207)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="features.Products" name="Put a Product with missing body" time="0.070965">
+    <failure message="Products.feature:218 - status code was: 200, expected: 400, response time: 60, url: http://localhost:3001/product/FIKarate, response: {}">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI000' .......................................................... passed
+When method GET ........................................................... passed
+Then status 500 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a27f7e101ad"}&#13;
+	at ✽.Then status 400 (Products.feature:95)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a2b0ce101ae"}&#13;
+	at ✽.Then status 400 (Products.feature:109)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","id":"FIKarate","_id":"60db841a74566a2165e101af"}&#13;
+	at ✽.Then status 400 (Products.feature:123)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"name":"KaratePost","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a60dce101b0"}&#13;
+	at ✽.Then status 400 (Products.feature:137)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {"_id":"60db841a74566a55e0e101b1"}&#13;
+	at ✽.Then status 400 (Products.feature:147)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:162 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePut","description":"A product for Karate framwork"}&#13;
+	at ✽.Then status 400 (Products.feature:162)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:177 - status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate"}&#13;
+	at ✽.Then status 400 (Products.feature:177)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:192 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePut","id":"FIKarate"}&#13;
+	at ✽.Then status 400 (Products.feature:192)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:207 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {"name":"KaratePut","description":"A product for Karate framwork","id":"FIKarate"}&#13;
+	at ✽.Then status 400 (Products.feature:207)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:218 - status code was: 200, expected: 400, response time: 60, url: http://localhost:3001/product/FIKarate, response: {}&#13;
+	at ✽.Then status 400 (Products.feature:218)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+  <testcase classname="features.Products" name="Delete a Product with Invalid Id" time="0.035571">
+    <failure message="Products.feature:224 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/DeleteInvalidId, response: {&quot;ok&quot;:0}">* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* def productId = "FI444" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 94 .............................................. passed
+And match out[0].description == "description" ............................. passed
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* def productId = "HI347" ................................................. passed
+* def out = karate.jsonPath(response, "$[?(@.id == '" + productId + "')]") . passed
+And match out[0].price == 82 .............................................. passed
+And match out[0].description == "TestCreateNewproduct" .................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:18 - path: $[0].description, actual: 'description', expected: 'TestCreateNewproduct', reason: not equal&#13;
+	at ✽.And match out[0].description == "TestCreateNewproduct" (Products.feature:18)&#13;
+
+And match out[0].imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI444' .......................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.price == 94 ............................................ passed
+And match response.description == "description" ........................... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/Superstar_Shoes_Black_FY0071_01_standard.jpg" . passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePost" ................................... passed
+And match response.description == "A product for Karate framwork" ......... passed
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . passed
+And match response._id != null ............................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response.id == "FIKarate" ....................................... passed
+And match response.name == "KaratePut" .................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:66 - path: $.name, actual: 'RugbyBall', expected: 'KaratePut', reason: not equal&#13;
+	at ✽.And match response.name == "KaratePut" (Products.feature:66)&#13;
+
+And match response.description == "A product for Karate framwork" ......... skipped
+And match response.imgUrl == "https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg" . skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method DELETE ........................................................ passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'FI000' .......................................................... passed
+When method GET ........................................................... passed
+Then status 500 ........................................................... passed
+And print response ........................................................ passed
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:95 - status code was: 200, expected: 400, response time: 22, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","description":"A product for Karate framwork","_id":"60db841a74566a27f7e101ad"}&#13;
+	at ✽.Then status 400 (Products.feature:95)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:109 - status code was: 200, expected: 400, response time: 46, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a2b0ce101ae"}&#13;
+	at ✽.Then status 400 (Products.feature:109)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:123 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePost","id":"FIKarate","_id":"60db841a74566a2165e101af"}&#13;
+	at ✽.Then status 400 (Products.feature:123)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:137 - status code was: 200, expected: 400, response time: 23, url: http://localhost:3001/product, response: {"name":"KaratePost","description":"A product for Karate framwork","id":"FIKarate","_id":"60db841a74566a60dce101b0"}&#13;
+	at ✽.Then status 400 (Products.feature:137)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+When method POST .......................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:147 - status code was: 200, expected: 400, response time: 26, url: http://localhost:3001/product, response: {"_id":"60db841a74566a55e0e101b1"}&#13;
+	at ✽.Then status 400 (Products.feature:147)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:162 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePut","description":"A product for Karate framwork"}&#13;
+	at ✽.Then status 400 (Products.feature:162)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:177 - status code was: 200, expected: 400, response time: 90, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","description":"A product for Karate framwork","id":"FIKarate"}&#13;
+	at ✽.Then status 400 (Products.feature:177)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:192 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/FIKarate, response: {"imgUrl":"https://assets.adidas.com/images/w_320,h_320,f_auto,q_auto:sensitive,fl_lossy/6634cf36274b4ea5ac46ac4e00b2021e_9366/karate.jpg","name":"KaratePut","id":"FIKarate"}&#13;
+	at ✽.Then status 400 (Products.feature:192)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:207 - status code was: 200, expected: 400, response time: 59, url: http://localhost:3001/product/FIKarate, response: {"name":"KaratePut","description":"A product for Karate framwork","id":"FIKarate"}&#13;
+	at ✽.Then status 400 (Products.feature:207)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+* def jsonBody = .......................................................... passed
+Given path '/product' ..................................................... passed
+And request jsonBody ...................................................... passed
+And path 'FIKarate' ....................................................... passed
+When method PUT ........................................................... passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:218 - status code was: 200, expected: 400, response time: 60, url: http://localhost:3001/product/FIKarate, response: {}&#13;
+	at ✽.Then status 400 (Products.feature:218)&#13;
+
+And print response ........................................................ skipped
+* url productbaseUrl ...................................................... passed
+Given path '/product' ..................................................... passed
+And path 'DeleteInvalidId' ................................................ passed
+When method DELETE ........................................................ passed
+Then status 400 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Products.feature:224 - status code was: 200, expected: 400, response time: 27, url: http://localhost:3001/product/DeleteInvalidId, response: {"ok":0}&#13;
+	at ✽.Then status 400 (Products.feature:224)&#13;
+
+And print response ........................................................ skipped</failure>
+  </testcase>
+</testsuite>

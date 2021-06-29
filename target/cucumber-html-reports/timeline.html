@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"Products Review[1:5]","start":3765,"end":6033,"title":"Products Review[1:5] 01:00:03.765-01:00:06.033 Post a Review"},{"id":2,"group":1,"content":"Products Review[2:25]","start":6051,"end":6097,"title":"Products Review[2:25] 01:00:06.051-01:00:06.097 Get a Review"},{"id":3,"group":1,"content":"Products Review[3:34]","start":6116,"end":6139,"title":"Products Review[3:34] 01:00:06.116-01:00:06.139 Post a Invalid Review"},{"id":4,"group":1,"content":"Products Review[4:46]","start":6150,"end":6183,"title":"Products Review[4:46] 01:00:06.150-01:00:06.183 Get a Review with Invalid ID"},{"id":5,"group":1,"content":"Products[1:5]","start":6384,"end":7094,"title":"Products[1:5] 01:00:06.384-01:00:07.094 Get All Products"},{"id":6,"group":1,"content":"Products[2:20]","start":7142,"end":7180,"title":"Products[2:20] 01:00:07.142-01:00:07.180 Get a Product"},{"id":7,"group":1,"content":"Products[3:29]","start":7192,"end":7225,"title":"Products[3:29] 01:00:07.192-01:00:07.225 Post a Product"},{"id":8,"group":1,"content":"Products[4:49]","start":7238,"end":7262,"title":"Products[4:49] 01:00:07.238-01:00:07.262 Put a Product"},{"id":9,"group":1,"content":"Products[5:69]","start":7273,"end":7290,"title":"Products[5:69] 01:00:07.273-01:00:07.290 Delete a Product"},{"id":10,"group":1,"content":"Products[6:77]","start":7302,"end":7393,"title":"Products[6:77] 01:00:07.302-01:00:07.393 Get a Product with Invalid Product ID"},{"id":11,"group":1,"content":"Products[7:83]","start":7408,"end":7439,"title":"Products[7:83] 01:00:07.408-01:00:07.439 Post a Product with missing id"},{"id":12,"group":1,"content":"Products[8:97]","start":7451,"end":7505,"title":"Products[8:97] 01:00:07.451-01:00:07.505 Post a Product with missing name"},{"id":13,"group":1,"content":"Products[9:111]","start":7528,"end":7558,"title":"Products[9:111] 01:00:07.528-01:00:07.558 Post a Product with missing description"},{"id":14,"group":1,"content":"Products[10:125]","start":7574,"end":7605,"title":"Products[10:125] 01:00:07.574-01:00:07.605 Post a Product with missing image URL"},{"id":15,"group":1,"content":"Products[11:139]","start":7647,"end":7682,"title":"Products[11:139] 01:00:07.647-01:00:07.682 Post a Product with missing body"},{"id":16,"group":1,"content":"Products[12:149]","start":7706,"end":7777,"title":"Products[12:149] 01:00:07.706-01:00:07.777 Put a Product with missing id"},{"id":17,"group":1,"content":"Products[13:164]","start":7799,"end":7902,"title":"Products[13:164] 01:00:07.799-01:00:07.902 Put a Product with missing name"},{"id":18,"group":1,"content":"Products[14:179]","start":7922,"end":7954,"title":"Products[14:179] 01:00:07.922-01:00:07.954 Put a Product with missing description"},{"id":19,"group":1,"content":"Products[15:194]","start":7967,"end":8033,"title":"Products[15:194] 01:00:07.967-01:00:08.033 Put a Product with missing image URL"},{"id":20,"group":1,"content":"Products[16:209]","start":8046,"end":8132,"title":"Products[16:209] 01:00:08.046-01:00:08.132 Put a Product with missing body"},{"id":21,"group":1,"content":"Products[17:220]","start":8149,"end":8185,"title":"Products[17:220] 01:00:08.149-01:00:08.185 Delete a Product with Invalid Id"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>
